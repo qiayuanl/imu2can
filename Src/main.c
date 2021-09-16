@@ -28,6 +28,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "bsp_can.h"
+#include "bsp_delay.h"
 #include "imu_interrupt.h"
 /* USER CODE END Includes */
 
@@ -96,17 +97,17 @@ int main(void)
   MX_TIM10_Init();
   MX_CAN1_Init();
   /* USER CODE BEGIN 2 */
-  imu_interrupt_init();
   can_init();
+  delay_init();
+  imu_interrupt_init();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  while (1)
-  {
-    /* USER CODE END WHILE */
+  while (1) {
+      /* USER CODE END WHILE */
 
-    /* USER CODE BEGIN 3 */
+      /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
 }

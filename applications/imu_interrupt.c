@@ -34,32 +34,30 @@ void imu_interrupt_init(void) {
     if (HAL_SPI_Init(&hspi1) != HAL_OK)
         Error_Handler();
     imu_start_flag = 1;
+    can_header.IDE = CAN_ID_STD;
+    can_header.RTR = CAN_RTR_DATA;
 }
 
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
     if (GPIO_Pin == INT1_ACCEL_Pin) {
         if (imu_start_flag) {
-            BMI088_read(gyro, accel, &temp);
+            uint32_t send_mail_box;
+            can_header.StdId = 0x300;
+            can_header.DLC = 0x04;
+            can_data[0] = 0xFF;
+            can_data[1] = 0x00;
+            can_data[2] = 0xFF;
+            can_data[3] = 0x00;
+            HAL_CAN_AddTxMessage(&hcan1, &can_header, can_data, &send_mail_box);
+        }
+    } else if (GPIO_Pin == INT1_GRYO_Pin) {
+        if (imu_start_flag) {
+            temp = get_BMI088_temperate();
             PID_calc(&imu_temp_pid, temp, TEMPERATURE_DESIRED);
             if (imu_temp_pid.out < 0.0f)
                 imu_temp_pid.out = 0.0f;
             uint16_t tempPWM = (uint16_t)imu_temp_pid.out;
             imu_pwm_set(tempPWM);
-            uint32_t send_mail_box;
-            can_header.StdId = 0x300;
-            can_header.IDE = CAN_ID_STD;
-            can_header.RTR = CAN_RTR_DATA;
-            can_header.DLC = 0x08;
-            can_data[0] = 0xFF;
-            can_data[1] = 0x00;
-            can_data[2] = 0xFF;
-            can_data[3] = 0x00;
-            can_data[4] = 0xFF;
-            can_data[5] = 0x00;
-            can_data[6] = 0xFF;
-            can_data[7] = 0x00;
-            HAL_CAN_AddTxMessage(&hcan1, &can_header, can_data, &send_mail_box);
         }
-    } else if (GPIO_Pin == INT1_GRYO_Pin) {
     }
 }
