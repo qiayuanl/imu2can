@@ -27,6 +27,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "bsp_can.h"
 #include "imu_interrupt.h"
 /* USER CODE END Includes */
 
@@ -47,7 +48,8 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
+static CAN_TxHeaderTypeDef can_header;
+static uint8_t can_data[8];
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -95,6 +97,7 @@ int main(void)
   MX_CAN1_Init();
   /* USER CODE BEGIN 2 */
   imu_interrupt_init();
+  can_init();
   /* USER CODE END 2 */
 
   /* Infinite loop */
