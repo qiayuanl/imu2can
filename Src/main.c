@@ -19,6 +19,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "can.h"
 #include "dma.h"
 #include "spi.h"
 #include "tim.h"
@@ -91,6 +92,7 @@ int main(void)
   MX_DMA_Init();
   MX_SPI1_Init();
   MX_TIM10_Init();
+  MX_CAN1_Init();
   /* USER CODE BEGIN 2 */
   imu_interrupt_init();
   /* USER CODE END 2 */
