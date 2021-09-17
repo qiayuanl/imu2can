@@ -22,7 +22,6 @@ fp32 BMI088_GYRO_SEN = BMI088_GYRO_2000_SEN;
         (data) = BMI088_read_write_byte(0x55);  \
         BMI088_ACCEL_NS_H();                    \
     }
-//#define BMI088_accel_write_muli_reg( reg,  data, len) { BMI088_ACCEL_NS_L(); BMI088_write_muli_reg(reg, data, len); BMI088_ACCEL_NS_H(); }
 #define BMI088_accel_read_muli_reg(reg, data, len) \
     {                                              \
         BMI088_ACCEL_NS_L();                       \
@@ -43,7 +42,6 @@ fp32 BMI088_GYRO_SEN = BMI088_GYRO_2000_SEN;
         BMI088_read_single_reg((reg), &(data)); \
         BMI088_GYRO_NS_H();                     \
     }
-//#define BMI088_gyro_write_muli_reg( reg,  data, len) { BMI088_GYRO_NS_L(); BMI088_write_muli_reg( ( reg ), ( data ), ( len ) ); BMI088_GYRO_NS_H(); }
 #define BMI088_gyro_read_muli_reg(reg, data, len)   \
     {                                               \
         BMI088_GYRO_NS_L();                         \
@@ -332,30 +330,27 @@ void BMI088_read_accel_who_am_i(void) {
     buf = 0;
 }
 
-void BMI088_temperature_read_over(uint8_t *rx_buf, fp32 *temperate) {
+fp32 BMI088_temperature_read_over(const uint8_t *rx_buf) {
     int16_t bmi088_raw_temp;
     bmi088_raw_temp = (int16_t)((rx_buf[0] << 3) | (rx_buf[1] >> 5));
 
     if (bmi088_raw_temp > 1023) {
         bmi088_raw_temp -= 2048;
     }
-    *temperate = bmi088_raw_temp * BMI088_TEMP_FACTOR + BMI088_TEMP_OFFSET;
+    return (fp32)bmi088_raw_temp * BMI088_TEMP_FACTOR + BMI088_TEMP_OFFSET;
 }
 
-void BMI088_accel_read_over(uint8_t *rx_buf, fp32 accel[3], fp32 *time) {
+void BMI088_accel_read_over(const uint8_t *rx_buf, fp32 accel[3]) {
     int16_t bmi088_raw_temp;
-    uint32_t sensor_time;
     bmi088_raw_temp = (int16_t)((rx_buf[1]) << 8) | rx_buf[0];
     accel[0] = bmi088_raw_temp * BMI088_ACCEL_SEN;
     bmi088_raw_temp = (int16_t)((rx_buf[3]) << 8) | rx_buf[2];
     accel[1] = bmi088_raw_temp * BMI088_ACCEL_SEN;
     bmi088_raw_temp = (int16_t)((rx_buf[5]) << 8) | rx_buf[4];
     accel[2] = bmi088_raw_temp * BMI088_ACCEL_SEN;
-    sensor_time = (uint32_t)((rx_buf[8] << 16) | (rx_buf[7] << 8) | rx_buf[6]);
-    *time = sensor_time * 39.0625f;
 }
 
-void BMI088_gyro_read_over(uint8_t *rx_buf, fp32 gyro[3]) {
+void BMI088_gyro_read_over(const uint8_t *rx_buf, fp32 gyro[3]) {
     int16_t bmi088_raw_temp;
     bmi088_raw_temp = (int16_t)((rx_buf[1]) << 8) | rx_buf[0];
     gyro[0] = bmi088_raw_temp * BMI088_GYRO_SEN;
@@ -366,36 +361,9 @@ void BMI088_gyro_read_over(uint8_t *rx_buf, fp32 gyro[3]) {
 }
 
 void BMI088_read(fp32 gyro[3], fp32 accel[3], fp32 *temperate) {
-    uint8_t buf[8] = {0, 0, 0, 0, 0, 0};
-    int16_t bmi088_raw_temp;
-
-    BMI088_accel_read_muli_reg(BMI088_ACCEL_XOUT_L, buf, 6);
-
-    bmi088_raw_temp = (int16_t)((buf[1]) << 8) | buf[0];
-    accel[0] = bmi088_raw_temp * BMI088_ACCEL_SEN;
-    bmi088_raw_temp = (int16_t)((buf[3]) << 8) | buf[2];
-    accel[1] = bmi088_raw_temp * BMI088_ACCEL_SEN;
-    bmi088_raw_temp = (int16_t)((buf[5]) << 8) | buf[4];
-    accel[2] = bmi088_raw_temp * BMI088_ACCEL_SEN;
-
-    BMI088_gyro_read_muli_reg(BMI088_GYRO_CHIP_ID, buf, 8);
-    if (buf[0] == BMI088_GYRO_CHIP_ID_VALUE) {
-        bmi088_raw_temp = (int16_t)((buf[3]) << 8) | buf[2];
-        gyro[0] = bmi088_raw_temp * BMI088_GYRO_SEN;
-        bmi088_raw_temp = (int16_t)((buf[5]) << 8) | buf[4];
-        gyro[1] = bmi088_raw_temp * BMI088_GYRO_SEN;
-        bmi088_raw_temp = (int16_t)((buf[7]) << 8) | buf[6];
-        gyro[2] = bmi088_raw_temp * BMI088_GYRO_SEN;
-    }
-    BMI088_accel_read_muli_reg(BMI088_TEMP_M, buf, 2);
-
-    bmi088_raw_temp = (int16_t)((buf[0] << 3) | (buf[1] >> 5));
-
-    if (bmi088_raw_temp > 1023) {
-        bmi088_raw_temp -= 2048;
-    }
-
-    *temperate = bmi088_raw_temp * BMI088_TEMP_FACTOR + BMI088_TEMP_OFFSET;
+    get_BMI088_gyro(gyro);
+    get_BMI088_accel(accel);
+    *temperate = get_BMI088_temperate();
 }
 
 uint32_t get_BMI088_sensor_time(void) {
@@ -408,50 +376,34 @@ uint32_t get_BMI088_sensor_time(void) {
     return sensor_time;
 }
 
-fp32 get_BMI088_temperate(void) {
-    uint8_t buf[2];
-    fp32 temperate;
-    int16_t temperate_raw_temp;
-
-    BMI088_accel_read_muli_reg(BMI088_TEMP_M, buf, 2);
-
-    temperate_raw_temp = (int16_t)((buf[0] << 3) | (buf[1] >> 5));
-
-    if (temperate_raw_temp > 1023) {
-        temperate_raw_temp -= 2048;
-    }
-
-    temperate = temperate_raw_temp * BMI088_TEMP_FACTOR + BMI088_TEMP_OFFSET;
-
-    return temperate;
+extern void get_BMI088_temperate_raw(uint8_t temp[2]) {
+    BMI088_accel_read_muli_reg(BMI088_TEMP_M, temp, 2);
 }
 
-void get_BMI088_gyro(int16_t gyro[3]) {
+fp32 get_BMI088_temperate(void) {
+    uint8_t buf[2];
+    get_BMI088_temperate_raw(buf);
+    return BMI088_temperature_read_over(buf);
+}
+
+void get_BMI088_gyro_raw(uint8_t gyro[6]) {
+    BMI088_gyro_read_muli_reg(BMI088_GYRO_X_L, gyro, 6);
+}
+
+void get_BMI088_gyro(fp32 gyro[3]) {
     uint8_t buf[6] = {0, 0, 0, 0, 0, 0};
-    int16_t gyro_raw_temp;
+    get_BMI088_gyro_raw(buf);
+    BMI088_gyro_read_over(buf, gyro);
+}
 
-    BMI088_gyro_read_muli_reg(BMI088_GYRO_X_L, buf, 6);
-
-    gyro_raw_temp = (int16_t)((buf[1]) << 8) | buf[0];
-    gyro[0] = gyro_raw_temp;
-    gyro_raw_temp = (int16_t)((buf[3]) << 8) | buf[2];
-    gyro[1] = gyro_raw_temp;
-    gyro_raw_temp = (int16_t)((buf[5]) << 8) | buf[4];
-    gyro[2] = gyro_raw_temp;
+void get_BMI088_accel_raw(uint8_t accel[6]) {
+    BMI088_accel_read_muli_reg(BMI088_ACCEL_XOUT_L, accel, 6);
 }
 
 void get_BMI088_accel(fp32 accel[3]) {
     uint8_t buf[6] = {0, 0, 0, 0, 0, 0};
-    int16_t accel_raw_temp;
-
-    BMI088_accel_read_muli_reg(BMI088_ACCEL_XOUT_L, buf, 6);
-
-    accel_raw_temp = (int16_t)((buf[1]) << 8) | buf[0];
-    accel[0] = accel_raw_temp * BMI088_ACCEL_SEN;
-    accel_raw_temp = (int16_t)((buf[3]) << 8) | buf[2];
-    accel[1] = accel_raw_temp * BMI088_ACCEL_SEN;
-    accel_raw_temp = (int16_t)((buf[5]) << 8) | buf[4];
-    accel[2] = accel_raw_temp * BMI088_ACCEL_SEN;
+    get_BMI088_accel_raw(buf);
+    BMI088_accel_read_over(buf, accel);
 }
 
 #if defined(BMI088_USE_SPI)
@@ -465,19 +417,6 @@ static void BMI088_read_single_reg(uint8_t reg, uint8_t *return_data) {
     BMI088_read_write_byte(reg | 0x80);
     *return_data = BMI088_read_write_byte(0x55);
 }
-
-// static void BMI088_write_muli_reg(uint8_t reg, uint8_t* buf, uint8_t len )
-//{
-//     BMI088_read_write_byte( reg );
-//     while( len != 0 )
-//     {
-
-//        BMI088_read_write_byte( *buf );
-//        buf ++;
-//        len --;
-//    }
-
-//}
 
 static void BMI088_read_muli_reg(uint8_t reg, uint8_t *buf, uint8_t len) {
     BMI088_read_write_byte(reg | 0x80);

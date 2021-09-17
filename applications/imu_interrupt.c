@@ -6,6 +6,8 @@
 #include "main.h"
 #include "pid.h"
 
+#define CAN_ID 0x300
+
 #define TEMPERATURE_DESIRED 45.0f
 #define TEMPERATURE_PID_KP 1600.0f         // kp of temperature control PID
 #define TEMPERATURE_PID_KI 0.2f            // ki of temperature control PID
@@ -18,7 +20,6 @@ extern CAN_HandleTypeDef hcan1;
 
 volatile uint8_t imu_start_flag = 0;
 
-fp32 gyro[3], accel[3], temp;
 const fp32 imu_temp_PID[3] = {TEMPERATURE_PID_KP, TEMPERATURE_PID_KI, TEMPERATURE_PID_KD};
 pid_type_def imu_temp_pid;
 
@@ -39,25 +40,28 @@ void imu_interrupt_init(void) {
 }
 
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
-    if (GPIO_Pin == INT1_ACCEL_Pin) {
+    if (GPIO_Pin == INT1_GRYO_Pin) {
         if (imu_start_flag) {
             uint32_t send_mail_box;
-            can_header.StdId = 0x300;
-            can_header.DLC = 0x04;
-            can_data[0] = 0xFF;
-            can_data[1] = 0x00;
-            can_data[2] = 0xFF;
-            can_data[3] = 0x00;
+            can_header.StdId = CAN_ID;
+            can_header.DLC = 0x08;
+            get_BMI088_gyro_raw(can_data);
+            get_BMI088_temperate_raw(&can_data[6]);
             HAL_CAN_AddTxMessage(&hcan1, &can_header, can_data, &send_mail_box);
-        }
-    } else if (GPIO_Pin == INT1_GRYO_Pin) {
-        if (imu_start_flag) {
-            temp = get_BMI088_temperate();
+            fp32 temp = BMI088_temperature_read_over(&can_data[6]);
             PID_calc(&imu_temp_pid, temp, TEMPERATURE_DESIRED);
             if (imu_temp_pid.out < 0.0f)
                 imu_temp_pid.out = 0.0f;
             uint16_t tempPWM = (uint16_t)imu_temp_pid.out;
             imu_pwm_set(tempPWM);
+        }
+    } else if (GPIO_Pin == INT1_ACCEL_Pin) {
+        if (imu_start_flag) {
+            uint32_t send_mail_box;
+            can_header.StdId = CAN_ID + 1;
+            can_header.DLC = 0x06;
+            get_BMI088_accel_raw(can_data);
+            HAL_CAN_AddTxMessage(&hcan1, &can_header, can_data, &send_mail_box);
         }
     }
 }
