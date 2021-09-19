@@ -6,9 +6,10 @@
 #include "main.h"
 #include "pid.h"
 
-#define CAN_ID 0x300
+#define CAN_ID 0x100
+#define CAMERA_TRIGGER_PRESCALER 4
 
-#define TEMPERATURE_DESIRED 45.0f
+#define TEMPERATURE_DESIRED 40.0f
 #define TEMPERATURE_PID_KP 1600.0f         // kp of temperature control PID
 #define TEMPERATURE_PID_KI 0.2f            // ki of temperature control PID
 #define TEMPERATURE_PID_KD 0.0f            // kd of temperature control PID
@@ -18,7 +19,8 @@
 extern SPI_HandleTypeDef hspi1;
 extern CAN_HandleTypeDef hcan1;
 
-volatile uint8_t imu_start_flag = 0;
+uint8_t imu_start_flag = 0;
+uint8_t camera_trigger_count = CAMERA_TRIGGER_PRESCALER;
 
 const fp32 imu_temp_PID[3] = {TEMPERATURE_PID_KP, TEMPERATURE_PID_KI, TEMPERATURE_PID_KD};
 pid_type_def imu_temp_pid;
@@ -59,8 +61,16 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
         if (imu_start_flag) {
             uint32_t send_mail_box;
             can_header.StdId = CAN_ID + 1;
-            can_header.DLC = 0x06;
+            can_header.DLC = 0x07;
             get_BMI088_accel_raw(can_data);
+
+            if (camera_trigger_count == 1) {
+                can_data[6] = 1;
+                camera_trigger_count = CAMERA_TRIGGER_PRESCALER;
+            } else {
+                can_data[6] = 0;
+                camera_trigger_count--;
+            }
             HAL_CAN_AddTxMessage(&hcan1, &can_header, can_data, &send_mail_box);
         }
     }
