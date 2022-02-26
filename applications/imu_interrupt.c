@@ -17,7 +17,7 @@
 #define TEMPERATURE_PID_MAX_I_OUT 4400.0f  // max I out of temperature control PID
 
 extern SPI_HandleTypeDef hspi1;
-extern CAN_HandleTypeDef hcan1;
+extern CAN_HandleTypeDef hcan;
 
 uint8_t imu_start_flag = 0;
 uint8_t camera_trigger_count = CAMERA_TRIGGER_PRESCALER;
@@ -27,6 +27,8 @@ pid_type_def imu_temp_pid;
 
 static CAN_TxHeaderTypeDef can_header;
 static uint8_t can_data[8];
+
+uint8_t camera_flag = 0;
 
 void imu_interrupt_init(void) {
     PID_init(&imu_temp_pid, PID_POSITION, imu_temp_PID, TEMPERATURE_PID_MAX_OUT, TEMPERATURE_PID_MAX_I_OUT);
@@ -49,7 +51,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
             can_header.DLC = 0x08;
             get_BMI088_gyro_raw(can_data);
             get_BMI088_temperate_raw(&can_data[6]);
-            HAL_CAN_AddTxMessage(&hcan1, &can_header, can_data, &send_mail_box);
+            HAL_CAN_AddTxMessage(&hcan, &can_header, can_data, &send_mail_box);
             fp32 temp = BMI088_temperature_read_over(&can_data[6]);
             PID_calc(&imu_temp_pid, temp, TEMPERATURE_DESIRED);
             if (imu_temp_pid.out < 0.0f)
@@ -59,19 +61,22 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
         }
     } else if (GPIO_Pin == INT1_ACCEL_Pin) {
         if (imu_start_flag) {
-            uint32_t send_mail_box;
             can_header.StdId = CAN_ID + 1;
+          uint32_t send_mail_box;
             can_header.DLC = 0x07;
             get_BMI088_accel_raw(can_data);
 
-            if (camera_trigger_count == 1) {
+            if (camera_trigger_count == 1){
                 can_data[6] = 1;
                 camera_trigger_count = CAMERA_TRIGGER_PRESCALER;
+                HAL_GPIO_WritePin(CAM_GPIO_Port,CAM_Pin,GPIO_PIN_SET);
             } else {
-                can_data[6] = 0;
-                camera_trigger_count--;
+
+              HAL_GPIO_WritePin(CAM_GPIO_Port,CAM_Pin,GPIO_PIN_RESET);
+              can_data[6] = 0;
+              camera_trigger_count--;
             }
-            HAL_CAN_AddTxMessage(&hcan1, &can_header, can_data, &send_mail_box);
+            HAL_CAN_AddTxMessage(&hcan, &can_header, can_data, &send_mail_box);
         }
     }
 }

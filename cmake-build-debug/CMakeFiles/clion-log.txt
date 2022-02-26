@@ -1,0 +1,5 @@
+"D:\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" D:\DynamicX\Code\imu2can_F1
+-- Minimal optimization, debug info included
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/DynamicX/Code/imu2can_F1/cmake-build-debug

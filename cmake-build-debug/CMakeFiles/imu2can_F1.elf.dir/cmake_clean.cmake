@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/imu2can_F1.elf.dir/Core/Src/can.c.obj"
+  "CMakeFiles/imu2can_F1.elf.dir/Core/Src/dma.c.obj"
+  "CMakeFiles/imu2can_F1.elf.dir/Core/Src/gpio.c.obj"
+  "CMakeFiles/imu2can_F1.elf.dir/Core/Src/main.c.obj"
+  "CMakeFiles/imu2can_F1.elf.dir/Core/Src/spi.c.obj"
+  "CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj"
+  "CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_it.c.obj"
+  "CMakeFiles/imu2can_F1.elf.dir/Core/Src/syscalls.c.obj"
+  "CMakeFiles/imu2can_F1.elf.dir/Core/Src/system_stm32f1xx.c.obj"
+  "CMakeFiles/imu2can_F1.elf.dir/Core/Src/tim.c.obj"
+  "CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj"
+  "CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj"
+  "CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj"
+  "CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj"
+  "CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj"
+  "CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj"
+  "CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj"
+  "CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj"
+  "CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj"
+  "CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj"
+  "CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj"
+  "CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj"
+  "CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj"
+  "CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj"
+  "CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj"
+  "CMakeFiles/imu2can_F1.elf.dir/applications/imu_interrupt.c.obj"
+  "CMakeFiles/imu2can_F1.elf.dir/applications/pid.c.obj"
+  "CMakeFiles/imu2can_F1.elf.dir/bsp/boards/bsp_can.c.obj"
+  "CMakeFiles/imu2can_F1.elf.dir/bsp/boards/bsp_delay.c.obj"
+  "CMakeFiles/imu2can_F1.elf.dir/bsp/boards/imu_pwm.c.obj"
+  "CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088Middleware.c.obj"
+  "CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj"
+  "CMakeFiles/imu2can_F1.elf.dir/startup/startup_stm32f103xb.s.obj"
+  "imu2can_F1.elf"
+  "imu2can_F1.elf.manifest"
+  "imu2can_F1.elf.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang ASM C)
+  include(CMakeFiles/imu2can_F1.elf.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

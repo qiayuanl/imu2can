@@ -2,8 +2,8 @@
 
 #include "main.h"
 
-extern CAN_HandleTypeDef hcan1;
-extern CAN_HandleTypeDef hcan2;
+extern CAN_HandleTypeDef hcan;
+//extern CAN_HandleTypeDef hcan2;
 
 void can_init(void) {
     CAN_FilterTypeDef can_filter_st;
@@ -16,7 +16,7 @@ void can_init(void) {
     can_filter_st.FilterMaskIdLow = 0x0000;
     can_filter_st.FilterBank = 0;
     can_filter_st.FilterFIFOAssignment = CAN_RX_FIFO0;
-    HAL_CAN_ConfigFilter(&hcan1, &can_filter_st);
-    HAL_CAN_Start(&hcan1);
-    HAL_CAN_ActivateNotification(&hcan1, CAN_IT_RX_FIFO0_MSG_PENDING);
+    HAL_CAN_ConfigFilter(&hcan, &can_filter_st);
+    HAL_CAN_Start(&hcan);
+    HAL_CAN_ActivateNotification(&hcan, CAN_IT_RX_FIFO0_MSG_PENDING);
 }

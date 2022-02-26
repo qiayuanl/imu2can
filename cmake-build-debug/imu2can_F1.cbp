@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="imu2can_F1"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/DynamicX/Code/imu2can_F1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/MinGW/bin/mingw32-make.exe -f &quot;D:/DynamicX/Code/imu2can_F1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/MinGW/bin/mingw32-make.exe -f &quot;D:/DynamicX/Code/imu2can_F1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/MinGW/bin/mingw32-make.exe -f &quot;D:/DynamicX/Code/imu2can_F1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/MinGW/bin/mingw32-make.exe -f &quot;D:/DynamicX/Code/imu2can_F1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/DynamicX/Code/imu2can_F1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/MinGW/bin/mingw32-make.exe -f &quot;D:/DynamicX/Code/imu2can_F1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/MinGW/bin/mingw32-make.exe -f &quot;D:/DynamicX/Code/imu2can_F1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/MinGW/bin/mingw32-make.exe -f &quot;D:/DynamicX/Code/imu2can_F1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/MinGW/bin/mingw32-make.exe -f &quot;D:/DynamicX/Code/imu2can_F1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="imu2can_F1.elf">
+				<Option output="D:/DynamicX/Code/imu2can_F1/cmake-build-debug/imu2can_F1.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/DynamicX/Code/imu2can_F1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32F103xB"/>
+					<Add directory="D:/DynamicX/Code/imu2can_F1/Core/Inc"/>
+					<Add directory="D:/DynamicX/Code/imu2can_F1/Drivers/STM32F1xx_HAL_Driver/Inc"/>
+					<Add directory="D:/DynamicX/Code/imu2can_F1/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="D:/DynamicX/Code/imu2can_F1/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
+					<Add directory="D:/DynamicX/Code/imu2can_F1/Drivers/CMSIS/Include"/>
+					<Add directory="D:/DynamicX/Code/imu2can_F1/bsp/boards"/>
+					<Add directory="D:/DynamicX/Code/imu2can_F1/component/devices"/>
+					<Add directory="D:/DynamicX/Code/imu2can_F1/applications"/>
+					<Add directory="c:\gcc-arm-none-eabi\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/include/c++/9.3.1"/>
+					<Add directory="c:\gcc-arm-none-eabi\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/include/c++/9.3.1/arm-none-eabi"/>
+					<Add directory="c:\gcc-arm-none-eabi\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/include/c++/9.3.1/backward"/>
+					<Add directory="c:\gcc-arm-none-eabi\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/include"/>
+					<Add directory="c:\gcc-arm-none-eabi\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/include-fixed"/>
+					<Add directory="c:\gcc-arm-none-eabi\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/MinGW/bin/mingw32-make.exe -f &quot;D:/DynamicX/Code/imu2can_F1/cmake-build-debug/Makefile&quot;  VERBOSE=1 imu2can_F1.elf"/>
+					<CompileFile command="C:/MinGW/MinGW/bin/mingw32-make.exe -f &quot;D:/DynamicX/Code/imu2can_F1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/MinGW/bin/mingw32-make.exe -f &quot;D:/DynamicX/Code/imu2can_F1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/MinGW/bin/mingw32-make.exe -f &quot;D:/DynamicX/Code/imu2can_F1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="imu2can_F1.elf/fast">
+				<Option output="D:/DynamicX/Code/imu2can_F1/cmake-build-debug/imu2can_F1.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/DynamicX/Code/imu2can_F1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32F103xB"/>
+					<Add directory="D:/DynamicX/Code/imu2can_F1/Core/Inc"/>
+					<Add directory="D:/DynamicX/Code/imu2can_F1/Drivers/STM32F1xx_HAL_Driver/Inc"/>
+					<Add directory="D:/DynamicX/Code/imu2can_F1/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="D:/DynamicX/Code/imu2can_F1/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
+					<Add directory="D:/DynamicX/Code/imu2can_F1/Drivers/CMSIS/Include"/>
+					<Add directory="D:/DynamicX/Code/imu2can_F1/bsp/boards"/>
+					<Add directory="D:/DynamicX/Code/imu2can_F1/component/devices"/>
+					<Add directory="D:/DynamicX/Code/imu2can_F1/applications"/>
+					<Add directory="c:\gcc-arm-none-eabi\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/include/c++/9.3.1"/>
+					<Add directory="c:\gcc-arm-none-eabi\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/include/c++/9.3.1/arm-none-eabi"/>
+					<Add directory="c:\gcc-arm-none-eabi\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/include/c++/9.3.1/backward"/>
+					<Add directory="c:\gcc-arm-none-eabi\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/include"/>
+					<Add directory="c:\gcc-arm-none-eabi\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/include-fixed"/>
+					<Add directory="c:\gcc-arm-none-eabi\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/MinGW/bin/mingw32-make.exe -f &quot;D:/DynamicX/Code/imu2can_F1/cmake-build-debug/Makefile&quot;  VERBOSE=1 imu2can_F1.elf/fast"/>
+					<CompileFile command="C:/MinGW/MinGW/bin/mingw32-make.exe -f &quot;D:/DynamicX/Code/imu2can_F1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/MinGW/bin/mingw32-make.exe -f &quot;D:/DynamicX/Code/imu2can_F1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/MinGW/bin/mingw32-make.exe -f &quot;D:/DynamicX/Code/imu2can_F1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/DynamicX/Code/imu2can_F1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/MinGW/bin/mingw32-make.exe -f &quot;D:/DynamicX/Code/imu2can_F1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/MinGW/bin/mingw32-make.exe -f &quot;D:/DynamicX/Code/imu2can_F1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/MinGW/bin/mingw32-make.exe -f &quot;D:/DynamicX/Code/imu2can_F1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/MinGW/bin/mingw32-make.exe -f &quot;D:/DynamicX/Code/imu2can_F1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Core/Inc/can.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Core/Inc/dma.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Core/Inc/gpio.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Core/Inc/kk.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Core/Inc/main.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Core/Inc/spi.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Core/Inc/stm32f1xx_hal_conf.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Core/Inc/stm32f1xx_it.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Core/Inc/tim.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Core/Src/can.c">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Core/Src/dma.c">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Core/Src/gpio.c">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Core/Src/main.c">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Core/Src/spi.c">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Core/Src/stm32f1xx_hal_msp.c">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Core/Src/stm32f1xx_it.c">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Core/Src/syscalls.c">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Core/Src/system_stm32f1xx.c">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Core/Src/tim.c">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/CMSIS/Include/cmsis_armcc.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/CMSIS/Include/cmsis_armclang.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/CMSIS/Include/cmsis_compiler.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/CMSIS/Include/cmsis_gcc.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/CMSIS/Include/cmsis_iccarm.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/CMSIS/Include/cmsis_version.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/CMSIS/Include/core_armv8mbl.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/CMSIS/Include/core_armv8mml.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/CMSIS/Include/core_cm0.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/CMSIS/Include/core_cm0plus.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/CMSIS/Include/core_cm1.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/CMSIS/Include/core_cm23.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/CMSIS/Include/core_cm3.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/CMSIS/Include/core_cm33.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/CMSIS/Include/core_cm4.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/CMSIS/Include/core_cm7.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/CMSIS/Include/core_sc000.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/CMSIS/Include/core_sc300.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/CMSIS/Include/mpu_armv7.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/CMSIS/Include/mpu_armv8.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/CMSIS/Include/tz_context.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/STM32F103C8Tx_FLASH.ld">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/applications/imu_interrupt.c">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/applications/imu_interrupt.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/applications/pid.c">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/applications/pid.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/bsp/boards/bsp_can.c">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/bsp/boards/bsp_can.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/bsp/boards/bsp_delay.c">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/bsp/boards/bsp_delay.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/bsp/boards/imu_pwm.c">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/bsp/boards/imu_pwm.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/bsp/boards/struct_typedef.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/component/devices/BMI088Middleware.c">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/component/devices/BMI088Middleware.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/component/devices/BMI088driver.c">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/component/devices/BMI088driver.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/component/devices/BMI088reg.h">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/startup/startup_stm32f103xb.s">
+			<Option target="imu2can_F1.elf"/>
+		</Unit>
+		<Unit filename="D:/DynamicX/Code/imu2can_F1/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
