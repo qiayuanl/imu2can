@@ -9,7 +9,7 @@
 #define CAN_ID 0x100
 #define CAMERA_TRIGGER_PRESCALER 4
 
-#define TEMPERATURE_DESIRED 40.0f
+#define TEMPERATURE_DESIRED 60.0f
 #define TEMPERATURE_PID_KP 1600.0f         // kp of temperature control PID
 #define TEMPERATURE_PID_KI 0.2f            // ki of temperature control PID
 #define TEMPERATURE_PID_KD 0.0f            // kd of temperature control PID
@@ -71,8 +71,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
                 camera_trigger_count = CAMERA_TRIGGER_PRESCALER;
                 HAL_GPIO_WritePin(CAM_GPIO_Port,CAM_Pin,GPIO_PIN_SET);
             } else {
-
-              HAL_GPIO_WritePin(CAM_GPIO_Port,CAM_Pin,GPIO_PIN_RESET);
+              HAL_GPIO_WritePin(CAM_GPIO_Port, CAM_Pin, GPIO_PIN_RESET);
               can_data[6] = 0;
               camera_trigger_count--;
             }

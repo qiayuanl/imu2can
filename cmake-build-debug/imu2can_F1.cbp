@@ -109,9 +109,6 @@
 		<Unit filename="D:/DynamicX/Code/imu2can_F1/Core/Inc/gpio.h">
 			<Option target="imu2can_F1.elf"/>
 		</Unit>
-		<Unit filename="D:/DynamicX/Code/imu2can_F1/Core/Inc/kk.h">
-			<Option target="imu2can_F1.elf"/>
-		</Unit>
 		<Unit filename="D:/DynamicX/Code/imu2can_F1/Core/Inc/main.h">
 			<Option target="imu2can_F1.elf"/>
 		</Unit>
