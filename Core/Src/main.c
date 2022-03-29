@@ -30,6 +30,7 @@
 #include "bsp_can.h"
 #include "bsp_delay.h"
 #include "imu_interrupt.h"
+#include "imu_pwm.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -99,10 +100,12 @@ int main(void)
   can_init();
   delay_init();
   imu_interrupt_init();
-  HAL_GPIO_WritePin(CAM_GPIO_Port,CAM_Pin,GPIO_PIN_RESET);
-  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_1,GPIO_PIN_SET);
-  /* USER CODE END 2 */
+  imu_pwm_set(0);
+  HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_2);
+  HAL_GPIO_WritePin(CAM_GPIO_Port, CAM_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, GPIO_PIN_SET);
 
+  /* USER CODE END 2 */
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1) {
@@ -136,6 +139,7 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
+
   /** Initializes the CPU, AHB and APB buses clocks
   */
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
@@ -186,5 +190,3 @@ void assert_failed(uint8_t *file, uint32_t line)
   /* USER CODE END 6 */
 }
 #endif /* USE_FULL_ASSERT */
-
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

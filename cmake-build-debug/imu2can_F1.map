@@ -67,7 +67,7 @@ Discarded input sections
  .data          0x00000000        0x0 CMakeFiles/imu2can_F1.elf.dir/Core/Src/can.c.obj
  .bss           0x00000000        0x0 CMakeFiles/imu2can_F1.elf.dir/Core/Src/can.c.obj
  .text.HAL_CAN_MspDeInit
-                0x00000000       0x30 CMakeFiles/imu2can_F1.elf.dir/Core/Src/can.c.obj
+                0x00000000       0x34 CMakeFiles/imu2can_F1.elf.dir/Core/Src/can.c.obj
  .text          0x00000000        0x0 CMakeFiles/imu2can_F1.elf.dir/Core/Src/dma.c.obj
  .data          0x00000000        0x0 CMakeFiles/imu2can_F1.elf.dir/Core/Src/dma.c.obj
  .bss           0x00000000        0x0 CMakeFiles/imu2can_F1.elf.dir/Core/Src/dma.c.obj
@@ -215,34 +215,6 @@ Discarded input sections
                 0x00000000       0x26 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
  .text.HAL_CAN_DeactivateNotification
                 0x00000000       0x26 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
- .text.HAL_CAN_TxMailbox0CompleteCallback
-                0x00000000        0x2 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
- .text.HAL_CAN_TxMailbox1CompleteCallback
-                0x00000000        0x2 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
- .text.HAL_CAN_TxMailbox2CompleteCallback
-                0x00000000        0x2 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
- .text.HAL_CAN_TxMailbox0AbortCallback
-                0x00000000        0x2 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
- .text.HAL_CAN_TxMailbox1AbortCallback
-                0x00000000        0x2 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
- .text.HAL_CAN_TxMailbox2AbortCallback
-                0x00000000        0x2 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
- .text.HAL_CAN_RxFifo0MsgPendingCallback
-                0x00000000        0x2 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
- .text.HAL_CAN_RxFifo0FullCallback
-                0x00000000        0x2 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
- .text.HAL_CAN_RxFifo1MsgPendingCallback
-                0x00000000        0x2 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
- .text.HAL_CAN_RxFifo1FullCallback
-                0x00000000        0x2 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
- .text.HAL_CAN_SleepCallback
-                0x00000000        0x2 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
- .text.HAL_CAN_WakeUpFromRxMsgCallback
-                0x00000000        0x2 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
- .text.HAL_CAN_ErrorCallback
-                0x00000000        0x2 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
- .text.HAL_CAN_IRQHandler
-                0x00000000      0x24a CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
  .text.HAL_CAN_GetState
                 0x00000000       0x2c CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
  .text.HAL_CAN_GetError
@@ -816,8 +788,6 @@ Discarded input sections
                 0x00000000       0x52 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.HAL_TIM_SlaveConfigSynchro_IT
                 0x00000000       0x52 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
- .text.TIM_CCxChannelCmd
-                0x00000000       0x22 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.HAL_TIM_OC_Start
                 0x00000000       0xdc CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.HAL_TIM_OC_Stop
@@ -830,8 +800,6 @@ Discarded input sections
                 0x00000000      0x23c CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.HAL_TIM_OC_Stop_DMA
                 0x00000000       0xe4 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
- .text.HAL_TIM_PWM_Start
-                0x00000000       0xdc CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.HAL_TIM_PWM_Stop
                 0x00000000       0x84 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.HAL_TIM_PWM_Start_IT
@@ -1152,7 +1120,7 @@ LOAD c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/t
                 0x08000000                g_pfnVectors
                 0x0800010c                . = ALIGN (0x4)
 
-.text           0x0800010c     0x2f64
+.text           0x0800010c     0x32fc
                 0x0800010c                . = ALIGN (0x4)
  *(.text)
  .text          0x0800010c       0x40 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crtbegin.o
@@ -1197,440 +1165,491 @@ LOAD c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/t
                 0x080005fc       0x40 CMakeFiles/imu2can_F1.elf.dir/Core/Src/can.c.obj
                 0x080005fc                MX_CAN_Init
  .text.HAL_CAN_MspInit
-                0x0800063c       0x78 CMakeFiles/imu2can_F1.elf.dir/Core/Src/can.c.obj
+                0x0800063c       0x88 CMakeFiles/imu2can_F1.elf.dir/Core/Src/can.c.obj
                 0x0800063c                HAL_CAN_MspInit
  .text.MX_DMA_Init
-                0x080006b4       0x44 CMakeFiles/imu2can_F1.elf.dir/Core/Src/dma.c.obj
-                0x080006b4                MX_DMA_Init
+                0x080006c4       0x44 CMakeFiles/imu2can_F1.elf.dir/Core/Src/dma.c.obj
+                0x080006c4                MX_DMA_Init
  .text.MX_GPIO_Init
-                0x080006f8       0xe8 CMakeFiles/imu2can_F1.elf.dir/Core/Src/gpio.c.obj
-                0x080006f8                MX_GPIO_Init
+                0x08000708       0xe8 CMakeFiles/imu2can_F1.elf.dir/Core/Src/gpio.c.obj
+                0x08000708                MX_GPIO_Init
  .text.Error_Handler
-                0x080007e0        0x4 CMakeFiles/imu2can_F1.elf.dir/Core/Src/main.c.obj
-                0x080007e0                Error_Handler
+                0x080007f0        0x4 CMakeFiles/imu2can_F1.elf.dir/Core/Src/main.c.obj
+                0x080007f0                Error_Handler
  .text.SystemClock_Config
-                0x080007e4       0x62 CMakeFiles/imu2can_F1.elf.dir/Core/Src/main.c.obj
-                0x080007e4                SystemClock_Config
- *fill*         0x08000846        0x2 
- .text.main     0x08000848       0x48 CMakeFiles/imu2can_F1.elf.dir/Core/Src/main.c.obj
-                0x08000848                main
+                0x080007f4       0x62 CMakeFiles/imu2can_F1.elf.dir/Core/Src/main.c.obj
+                0x080007f4                SystemClock_Config
+ *fill*         0x08000856        0x2 
+ .text.main     0x08000858       0x5c CMakeFiles/imu2can_F1.elf.dir/Core/Src/main.c.obj
+                0x08000858                main
  .text.MX_SPI1_Init
-                0x08000890       0x48 CMakeFiles/imu2can_F1.elf.dir/Core/Src/spi.c.obj
-                0x08000890                MX_SPI1_Init
+                0x080008b4       0x48 CMakeFiles/imu2can_F1.elf.dir/Core/Src/spi.c.obj
+                0x080008b4                MX_SPI1_Init
  .text.HAL_SPI_MspInit
-                0x080008d8       0xe4 CMakeFiles/imu2can_F1.elf.dir/Core/Src/spi.c.obj
-                0x080008d8                HAL_SPI_MspInit
+                0x080008fc       0xe4 CMakeFiles/imu2can_F1.elf.dir/Core/Src/spi.c.obj
+                0x080008fc                HAL_SPI_MspInit
  .text.HAL_MspInit
-                0x080009bc       0x44 CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
-                0x080009bc                HAL_MspInit
+                0x080009e0       0x44 CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+                0x080009e0                HAL_MspInit
  .text.NMI_Handler
-                0x08000a00        0x2 CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08000a00                NMI_Handler
+                0x08000a24        0x2 CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08000a24                NMI_Handler
  .text.HardFault_Handler
-                0x08000a02        0x2 CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08000a02                HardFault_Handler
+                0x08000a26        0x2 CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08000a26                HardFault_Handler
  .text.MemManage_Handler
-                0x08000a04        0x2 CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08000a04                MemManage_Handler
+                0x08000a28        0x2 CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08000a28                MemManage_Handler
  .text.BusFault_Handler
-                0x08000a06        0x2 CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08000a06                BusFault_Handler
+                0x08000a2a        0x2 CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08000a2a                BusFault_Handler
  .text.UsageFault_Handler
-                0x08000a08        0x2 CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08000a08                UsageFault_Handler
+                0x08000a2c        0x2 CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08000a2c                UsageFault_Handler
  .text.SVC_Handler
-                0x08000a0a        0x2 CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08000a0a                SVC_Handler
+                0x08000a2e        0x2 CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08000a2e                SVC_Handler
  .text.DebugMon_Handler
-                0x08000a0c        0x2 CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08000a0c                DebugMon_Handler
+                0x08000a30        0x2 CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08000a30                DebugMon_Handler
  .text.PendSV_Handler
-                0x08000a0e        0x2 CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08000a0e                PendSV_Handler
+                0x08000a32        0x2 CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08000a32                PendSV_Handler
  .text.SysTick_Handler
-                0x08000a10        0x8 CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08000a10                SysTick_Handler
+                0x08000a34        0x8 CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08000a34                SysTick_Handler
  .text.EXTI3_IRQHandler
-                0x08000a18        0xa CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08000a18                EXTI3_IRQHandler
+                0x08000a3c        0xa CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08000a3c                EXTI3_IRQHandler
  .text.EXTI4_IRQHandler
-                0x08000a22        0xa CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08000a22                EXTI4_IRQHandler
+                0x08000a46        0xa CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08000a46                EXTI4_IRQHandler
  .text.DMA1_Channel2_IRQHandler
-                0x08000a2c       0x10 CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08000a2c                DMA1_Channel2_IRQHandler
+                0x08000a50       0x10 CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08000a50                DMA1_Channel2_IRQHandler
  .text.DMA1_Channel3_IRQHandler
-                0x08000a3c       0x10 CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x08000a3c                DMA1_Channel3_IRQHandler
+                0x08000a60       0x10 CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08000a60                DMA1_Channel3_IRQHandler
+ .text.CAN1_RX1_IRQHandler
+                0x08000a70       0x10 CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08000a70                CAN1_RX1_IRQHandler
  .text.SystemInit
-                0x08000a4c        0x2 CMakeFiles/imu2can_F1.elf.dir/Core/Src/system_stm32f1xx.c.obj
-                0x08000a4c                SystemInit
+                0x08000a80        0x2 CMakeFiles/imu2can_F1.elf.dir/Core/Src/system_stm32f1xx.c.obj
+                0x08000a80                SystemInit
  .text.HAL_TIM_Base_MspInit
-                0x08000a4e       0x26 CMakeFiles/imu2can_F1.elf.dir/Core/Src/tim.c.obj
-                0x08000a4e                HAL_TIM_Base_MspInit
+                0x08000a82       0x26 CMakeFiles/imu2can_F1.elf.dir/Core/Src/tim.c.obj
+                0x08000a82                HAL_TIM_Base_MspInit
  .text.HAL_TIM_MspPostInit
-                0x08000a74       0x48 CMakeFiles/imu2can_F1.elf.dir/Core/Src/tim.c.obj
-                0x08000a74                HAL_TIM_MspPostInit
+                0x08000aa8       0x48 CMakeFiles/imu2can_F1.elf.dir/Core/Src/tim.c.obj
+                0x08000aa8                HAL_TIM_MspPostInit
  .text.MX_TIM2_Init
-                0x08000abc       0xac CMakeFiles/imu2can_F1.elf.dir/Core/Src/tim.c.obj
-                0x08000abc                MX_TIM2_Init
+                0x08000af0       0xac CMakeFiles/imu2can_F1.elf.dir/Core/Src/tim.c.obj
+                0x08000af0                MX_TIM2_Init
  .text.HAL_InitTick
-                0x08000b68       0x4c CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x08000b68                HAL_InitTick
+                0x08000b9c       0x4c CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x08000b9c                HAL_InitTick
  .text.HAL_Init
-                0x08000bb4       0x24 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x08000bb4                HAL_Init
+                0x08000be8       0x24 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x08000be8                HAL_Init
  .text.HAL_IncTick
-                0x08000bd8       0x18 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x08000bd8                HAL_IncTick
+                0x08000c0c       0x18 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x08000c0c                HAL_IncTick
  .text.HAL_GetTick
-                0x08000bf0        0xc CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x08000bf0                HAL_GetTick
+                0x08000c24        0xc CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x08000c24                HAL_GetTick
  .text.HAL_CAN_Init
-                0x08000bfc      0x14c CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
-                0x08000bfc                HAL_CAN_Init
+                0x08000c30      0x14c CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
+                0x08000c30                HAL_CAN_Init
  .text.HAL_CAN_ConfigFilter
-                0x08000d48       0xfe CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
-                0x08000d48                HAL_CAN_ConfigFilter
+                0x08000d7c       0xfe CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
+                0x08000d7c                HAL_CAN_ConfigFilter
  .text.HAL_CAN_Start
-                0x08000e46       0x5c CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
-                0x08000e46                HAL_CAN_Start
+                0x08000e7a       0x5c CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
+                0x08000e7a                HAL_CAN_Start
  .text.HAL_CAN_AddTxMessage
-                0x08000ea2       0xec CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
-                0x08000ea2                HAL_CAN_AddTxMessage
+                0x08000ed6       0xec CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
+                0x08000ed6                HAL_CAN_AddTxMessage
  .text.HAL_CAN_ActivateNotification
-                0x08000f8e       0x24 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
-                0x08000f8e                HAL_CAN_ActivateNotification
- *fill*         0x08000fb2        0x2 
+                0x08000fc2       0x24 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
+                0x08000fc2                HAL_CAN_ActivateNotification
+ .text.HAL_CAN_TxMailbox0CompleteCallback
+                0x08000fe6        0x2 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
+                0x08000fe6                HAL_CAN_TxMailbox0CompleteCallback
+ .text.HAL_CAN_TxMailbox1CompleteCallback
+                0x08000fe8        0x2 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
+                0x08000fe8                HAL_CAN_TxMailbox1CompleteCallback
+ .text.HAL_CAN_TxMailbox2CompleteCallback
+                0x08000fea        0x2 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
+                0x08000fea                HAL_CAN_TxMailbox2CompleteCallback
+ .text.HAL_CAN_TxMailbox0AbortCallback
+                0x08000fec        0x2 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
+                0x08000fec                HAL_CAN_TxMailbox0AbortCallback
+ .text.HAL_CAN_TxMailbox1AbortCallback
+                0x08000fee        0x2 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
+                0x08000fee                HAL_CAN_TxMailbox1AbortCallback
+ .text.HAL_CAN_TxMailbox2AbortCallback
+                0x08000ff0        0x2 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
+                0x08000ff0                HAL_CAN_TxMailbox2AbortCallback
+ .text.HAL_CAN_RxFifo0MsgPendingCallback
+                0x08000ff2        0x2 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
+                0x08000ff2                HAL_CAN_RxFifo0MsgPendingCallback
+ .text.HAL_CAN_RxFifo0FullCallback
+                0x08000ff4        0x2 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
+                0x08000ff4                HAL_CAN_RxFifo0FullCallback
+ .text.HAL_CAN_RxFifo1MsgPendingCallback
+                0x08000ff6        0x2 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
+                0x08000ff6                HAL_CAN_RxFifo1MsgPendingCallback
+ .text.HAL_CAN_RxFifo1FullCallback
+                0x08000ff8        0x2 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
+                0x08000ff8                HAL_CAN_RxFifo1FullCallback
+ .text.HAL_CAN_SleepCallback
+                0x08000ffa        0x2 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
+                0x08000ffa                HAL_CAN_SleepCallback
+ .text.HAL_CAN_WakeUpFromRxMsgCallback
+                0x08000ffc        0x2 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
+                0x08000ffc                HAL_CAN_WakeUpFromRxMsgCallback
+ .text.HAL_CAN_ErrorCallback
+                0x08000ffe        0x2 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
+                0x08000ffe                HAL_CAN_ErrorCallback
+ .text.HAL_CAN_IRQHandler
+                0x08001000      0x24a CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
+                0x08001000                HAL_CAN_IRQHandler
+ *fill*         0x0800124a        0x2 
  .text.HAL_NVIC_SetPriorityGrouping
-                0x08000fb4       0x24 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
-                0x08000fb4                HAL_NVIC_SetPriorityGrouping
+                0x0800124c       0x24 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x0800124c                HAL_NVIC_SetPriorityGrouping
  .text.HAL_NVIC_SetPriority
-                0x08000fd8       0x68 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
-                0x08000fd8                HAL_NVIC_SetPriority
+                0x08001270       0x68 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x08001270                HAL_NVIC_SetPriority
  .text.HAL_NVIC_EnableIRQ
-                0x08001040       0x1c CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
-                0x08001040                HAL_NVIC_EnableIRQ
+                0x080012d8       0x1c CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x080012d8                HAL_NVIC_EnableIRQ
  .text.HAL_SYSTICK_Config
-                0x0800105c       0x2c CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
-                0x0800105c                HAL_SYSTICK_Config
+                0x080012f4       0x2c CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x080012f4                HAL_SYSTICK_Config
  .text.HAL_DMA_Init
-                0x08001088       0x6c CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
-                0x08001088                HAL_DMA_Init
+                0x08001320       0x6c CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+                0x08001320                HAL_DMA_Init
  .text.HAL_DMA_IRQHandler
-                0x080010f4      0x144 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
-                0x080010f4                HAL_DMA_IRQHandler
+                0x0800138c      0x144 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+                0x0800138c                HAL_DMA_IRQHandler
  .text.HAL_GPIO_Init
-                0x08001238      0x220 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
-                0x08001238                HAL_GPIO_Init
+                0x080014d0      0x220 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+                0x080014d0                HAL_GPIO_Init
  .text.HAL_GPIO_WritePin
-                0x08001458        0xc CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
-                0x08001458                HAL_GPIO_WritePin
+                0x080016f0        0xc CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+                0x080016f0                HAL_GPIO_WritePin
  .text.HAL_GPIO_EXTI_IRQHandler
-                0x08001464       0x1c CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
-                0x08001464                HAL_GPIO_EXTI_IRQHandler
+                0x080016fc       0x1c CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+                0x080016fc                HAL_GPIO_EXTI_IRQHandler
  .text.RCC_Delay
-                0x08001480       0x2c CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x08001718       0x2c CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
  .text.HAL_RCC_OscConfig
-                0x080014ac      0x410 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
-                0x080014ac                HAL_RCC_OscConfig
+                0x08001744      0x410 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x08001744                HAL_RCC_OscConfig
  .text.HAL_RCC_GetSysClockFreq
-                0x080018bc       0x6c CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
-                0x080018bc                HAL_RCC_GetSysClockFreq
+                0x08001b54       0x6c CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x08001b54                HAL_RCC_GetSysClockFreq
  .text.HAL_RCC_ClockConfig
-                0x08001928      0x16c CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
-                0x08001928                HAL_RCC_ClockConfig
+                0x08001bc0      0x16c CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x08001bc0                HAL_RCC_ClockConfig
  .text.SPI_WaitFlagStateUntilTimeout
-                0x08001a94       0xd0 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+                0x08001d2c       0xd0 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
  .text.SPI_EndRxTxTransaction
-                0x08001b64       0x24 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+                0x08001dfc       0x24 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
  .text.HAL_SPI_Init
-                0x08001b88       0xb6 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
-                0x08001b88                HAL_SPI_Init
+                0x08001e20       0xb6 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+                0x08001e20                HAL_SPI_Init
  .text.HAL_SPI_TransmitReceive
-                0x08001c3e      0x238 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
-                0x08001c3e                HAL_SPI_TransmitReceive
- *fill*         0x08001e76        0x2 
+                0x08001ed6      0x238 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+                0x08001ed6                HAL_SPI_TransmitReceive
+ *fill*         0x0800210e        0x2 
  .text.TIM_OC1_SetConfig
-                0x08001e78       0x5c CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08002110       0x5c CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.TIM_OC3_SetConfig
-                0x08001ed4       0x64 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x0800216c       0x64 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.TIM_OC4_SetConfig
-                0x08001f38       0x48 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x080021d0       0x48 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.TIM_TI1_ConfigInputStage
-                0x08001f80       0x24 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08002218       0x24 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.TIM_TI2_ConfigInputStage
-                0x08001fa4       0x26 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x0800223c       0x26 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.TIM_ITRx_SetConfig
-                0x08001fca       0x10 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08002262       0x10 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.HAL_TIM_PWM_MspInit
-                0x08001fda        0x2 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08001fda                HAL_TIM_PWM_MspInit
+                0x08002272        0x2 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08002272                HAL_TIM_PWM_MspInit
  .text.TIM_Base_SetConfig
-                0x08001fdc       0x74 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08001fdc                TIM_Base_SetConfig
+                0x08002274       0x74 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08002274                TIM_Base_SetConfig
  .text.HAL_TIM_Base_Init
-                0x08002050       0x58 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08002050                HAL_TIM_Base_Init
+                0x080022e8       0x58 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x080022e8                HAL_TIM_Base_Init
  .text.HAL_TIM_PWM_Init
-                0x080020a8       0x58 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x080020a8                HAL_TIM_PWM_Init
+                0x08002340       0x58 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08002340                HAL_TIM_PWM_Init
  .text.TIM_OC2_SetConfig
-                0x08002100       0x64 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08002100                TIM_OC2_SetConfig
+                0x08002398       0x64 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08002398                TIM_OC2_SetConfig
  .text.HAL_TIM_PWM_ConfigChannel
-                0x08002164       0xd0 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08002164                HAL_TIM_PWM_ConfigChannel
+                0x080023fc       0xd0 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x080023fc                HAL_TIM_PWM_ConfigChannel
  .text.TIM_ETR_SetConfig
-                0x08002234       0x16 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08002234                TIM_ETR_SetConfig
+                0x080024cc       0x16 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x080024cc                TIM_ETR_SetConfig
  .text.HAL_TIM_ConfigClockSource
-                0x0800224a       0xda CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x0800224a                HAL_TIM_ConfigClockSource
+                0x080024e2       0xda CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x080024e2                HAL_TIM_ConfigClockSource
+ .text.TIM_CCxChannelCmd
+                0x080025bc       0x22 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x080025bc                TIM_CCxChannelCmd
+ *fill*         0x080025de        0x2 
+ .text.HAL_TIM_PWM_Start
+                0x080025e0       0xdc CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x080025e0                HAL_TIM_PWM_Start
  .text.HAL_TIMEx_MasterConfigSynchronization
-                0x08002324       0x68 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
-                0x08002324                HAL_TIMEx_MasterConfigSynchronization
+                0x080026bc       0x68 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+                0x080026bc                HAL_TIMEx_MasterConfigSynchronization
  .text.imu_interrupt_init
-                0x0800238c       0x60 CMakeFiles/imu2can_F1.elf.dir/applications/imu_interrupt.c.obj
-                0x0800238c                imu_interrupt_init
+                0x08002724       0x60 CMakeFiles/imu2can_F1.elf.dir/applications/imu_interrupt.c.obj
+                0x08002724                imu_interrupt_init
  .text.HAL_GPIO_EXTI_Callback
-                0x080023ec       0xf4 CMakeFiles/imu2can_F1.elf.dir/applications/imu_interrupt.c.obj
-                0x080023ec                HAL_GPIO_EXTI_Callback
+                0x08002784       0xf4 CMakeFiles/imu2can_F1.elf.dir/applications/imu_interrupt.c.obj
+                0x08002784                HAL_GPIO_EXTI_Callback
  .text.PID_init
-                0x080024e0       0x36 CMakeFiles/imu2can_F1.elf.dir/applications/pid.c.obj
-                0x080024e0                PID_init
+                0x08002878       0x36 CMakeFiles/imu2can_F1.elf.dir/applications/pid.c.obj
+                0x08002878                PID_init
  .text.PID_calc
-                0x08002516      0x14e CMakeFiles/imu2can_F1.elf.dir/applications/pid.c.obj
-                0x08002516                PID_calc
+                0x080028ae      0x14e CMakeFiles/imu2can_F1.elf.dir/applications/pid.c.obj
+                0x080028ae                PID_calc
  .text.can_init
-                0x08002664       0x3c CMakeFiles/imu2can_F1.elf.dir/bsp/boards/bsp_can.c.obj
-                0x08002664                can_init
+                0x080029fc       0x3c CMakeFiles/imu2can_F1.elf.dir/bsp/boards/bsp_can.c.obj
+                0x080029fc                can_init
  .text.delay_init
-                0x080026a0       0x34 CMakeFiles/imu2can_F1.elf.dir/bsp/boards/bsp_delay.c.obj
-                0x080026a0                delay_init
+                0x08002a38       0x34 CMakeFiles/imu2can_F1.elf.dir/bsp/boards/bsp_delay.c.obj
+                0x08002a38                delay_init
  .text.delay_us
-                0x080026d4       0x3c CMakeFiles/imu2can_F1.elf.dir/bsp/boards/bsp_delay.c.obj
-                0x080026d4                delay_us
+                0x08002a6c       0x3c CMakeFiles/imu2can_F1.elf.dir/bsp/boards/bsp_delay.c.obj
+                0x08002a6c                delay_us
  .text.delay_ms
-                0x08002710       0x3c CMakeFiles/imu2can_F1.elf.dir/bsp/boards/bsp_delay.c.obj
-                0x08002710                delay_ms
+                0x08002aa8       0x3c CMakeFiles/imu2can_F1.elf.dir/bsp/boards/bsp_delay.c.obj
+                0x08002aa8                delay_ms
  .text.imu_pwm_set
-                0x0800274c        0x8 CMakeFiles/imu2can_F1.elf.dir/bsp/boards/imu_pwm.c.obj
-                0x0800274c                imu_pwm_set
+                0x08002ae4        0x8 CMakeFiles/imu2can_F1.elf.dir/bsp/boards/imu_pwm.c.obj
+                0x08002ae4                imu_pwm_set
  .text.BMI088_GPIO_init
-                0x08002754        0x2 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088Middleware.c.obj
-                0x08002754                BMI088_GPIO_init
+                0x08002aec        0x2 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088Middleware.c.obj
+                0x08002aec                BMI088_GPIO_init
  .text.BMI088_com_init
-                0x08002756        0x2 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088Middleware.c.obj
-                0x08002756                BMI088_com_init
+                0x08002aee        0x2 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088Middleware.c.obj
+                0x08002aee                BMI088_com_init
  .text.BMI088_delay_ms
-                0x08002758        0x8 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088Middleware.c.obj
-                0x08002758                BMI088_delay_ms
+                0x08002af0        0x8 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088Middleware.c.obj
+                0x08002af0                BMI088_delay_ms
  .text.BMI088_delay_us
-                0x08002760        0x8 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088Middleware.c.obj
-                0x08002760                BMI088_delay_us
+                0x08002af8        0x8 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088Middleware.c.obj
+                0x08002af8                BMI088_delay_us
  .text.BMI088_ACCEL_NS_L
-                0x08002768       0x14 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088Middleware.c.obj
-                0x08002768                BMI088_ACCEL_NS_L
+                0x08002b00       0x14 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088Middleware.c.obj
+                0x08002b00                BMI088_ACCEL_NS_L
  .text.BMI088_ACCEL_NS_H
-                0x0800277c       0x14 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088Middleware.c.obj
-                0x0800277c                BMI088_ACCEL_NS_H
+                0x08002b14       0x14 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088Middleware.c.obj
+                0x08002b14                BMI088_ACCEL_NS_H
  .text.BMI088_GYRO_NS_L
-                0x08002790       0x14 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088Middleware.c.obj
-                0x08002790                BMI088_GYRO_NS_L
+                0x08002b28       0x14 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088Middleware.c.obj
+                0x08002b28                BMI088_GYRO_NS_L
  .text.BMI088_GYRO_NS_H
-                0x080027a4       0x14 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088Middleware.c.obj
-                0x080027a4                BMI088_GYRO_NS_H
+                0x08002b3c       0x14 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088Middleware.c.obj
+                0x08002b3c                BMI088_GYRO_NS_H
  .text.BMI088_read_write_byte
-                0x080027b8       0x2c CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088Middleware.c.obj
-                0x080027b8                BMI088_read_write_byte
+                0x08002b50       0x2c CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088Middleware.c.obj
+                0x08002b50                BMI088_read_write_byte
  .text.BMI088_write_single_reg
-                0x080027e4       0x10 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
+                0x08002b7c       0x10 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
  .text.BMI088_read_single_reg
-                0x080027f4       0x16 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
+                0x08002b8c       0x16 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
  .text.BMI088_read_muli_reg
-                0x0800280a       0x22 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
+                0x08002ba2       0x22 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
  .text.bmi088_accel_init
-                0x0800282c      0x134 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
-                0x0800282c                bmi088_accel_init
+                0x08002bc4      0x134 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
+                0x08002bc4                bmi088_accel_init
  .text.bmi088_gyro_init
-                0x08002960       0xf0 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
-                0x08002960                bmi088_gyro_init
+                0x08002cf8       0xf0 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
+                0x08002cf8                bmi088_gyro_init
  .text.bmi088_accel_self_test
-                0x08002a50      0x308 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
-                0x08002a50                bmi088_accel_self_test
+                0x08002de8      0x308 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
+                0x08002de8                bmi088_accel_self_test
  .text.bmi088_gyro_self_test
-                0x08002d58       0xd6 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
-                0x08002d58                bmi088_gyro_self_test
+                0x080030f0       0xd6 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
+                0x080030f0                bmi088_gyro_self_test
  .text.BMI088_init
-                0x08002e2e       0x32 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
-                0x08002e2e                BMI088_init
+                0x080031c6       0x32 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
+                0x080031c6                BMI088_init
  .text.BMI088_temperature_read_over
-                0x08002e60       0x30 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
-                0x08002e60                BMI088_temperature_read_over
+                0x080031f8       0x30 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
+                0x080031f8                BMI088_temperature_read_over
  .text.get_BMI088_temperate_raw
-                0x08002e90       0x1e CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
-                0x08002e90                get_BMI088_temperate_raw
+                0x08003228       0x1e CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
+                0x08003228                get_BMI088_temperate_raw
  .text.get_BMI088_gyro_raw
-                0x08002eae       0x18 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
-                0x08002eae                get_BMI088_gyro_raw
+                0x08003246       0x18 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
+                0x08003246                get_BMI088_gyro_raw
  .text.get_BMI088_accel_raw
-                0x08002ec6       0x1e CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
-                0x08002ec6                get_BMI088_accel_raw
+                0x0800325e       0x1e CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
+                0x0800325e                get_BMI088_accel_raw
  .text.Reset_Handler
-                0x08002ee4       0x48 CMakeFiles/imu2can_F1.elf.dir/startup/startup_stm32f103xb.s.obj
-                0x08002ee4                Reset_Handler
+                0x0800327c       0x48 CMakeFiles/imu2can_F1.elf.dir/startup/startup_stm32f103xb.s.obj
+                0x0800327c                Reset_Handler
  .text.Default_Handler
-                0x08002f2c        0x2 CMakeFiles/imu2can_F1.elf.dir/startup/startup_stm32f103xb.s.obj
-                0x08002f2c                RTC_Alarm_IRQHandler
-                0x08002f2c                EXTI2_IRQHandler
-                0x08002f2c                TIM1_CC_IRQHandler
-                0x08002f2c                PVD_IRQHandler
-                0x08002f2c                EXTI0_IRQHandler
-                0x08002f2c                I2C2_EV_IRQHandler
-                0x08002f2c                ADC1_2_IRQHandler
-                0x08002f2c                SPI1_IRQHandler
-                0x08002f2c                TAMPER_IRQHandler
-                0x08002f2c                DMA1_Channel4_IRQHandler
-                0x08002f2c                USART3_IRQHandler
-                0x08002f2c                RTC_IRQHandler
-                0x08002f2c                DMA1_Channel7_IRQHandler
-                0x08002f2c                CAN1_RX1_IRQHandler
-                0x08002f2c                TIM4_IRQHandler
-                0x08002f2c                I2C1_EV_IRQHandler
-                0x08002f2c                DMA1_Channel6_IRQHandler
-                0x08002f2c                TIM3_IRQHandler
-                0x08002f2c                RCC_IRQHandler
-                0x08002f2c                TIM1_TRG_COM_IRQHandler
-                0x08002f2c                DMA1_Channel1_IRQHandler
-                0x08002f2c                Default_Handler
-                0x08002f2c                EXTI15_10_IRQHandler
-                0x08002f2c                EXTI9_5_IRQHandler
-                0x08002f2c                SPI2_IRQHandler
-                0x08002f2c                DMA1_Channel5_IRQHandler
-                0x08002f2c                USB_LP_CAN1_RX0_IRQHandler
-                0x08002f2c                USB_HP_CAN1_TX_IRQHandler
-                0x08002f2c                TIM1_UP_IRQHandler
-                0x08002f2c                WWDG_IRQHandler
-                0x08002f2c                TIM2_IRQHandler
-                0x08002f2c                TIM1_BRK_IRQHandler
-                0x08002f2c                EXTI1_IRQHandler
-                0x08002f2c                USART2_IRQHandler
-                0x08002f2c                I2C2_ER_IRQHandler
-                0x08002f2c                CAN1_SCE_IRQHandler
-                0x08002f2c                FLASH_IRQHandler
-                0x08002f2c                USART1_IRQHandler
-                0x08002f2c                I2C1_ER_IRQHandler
-                0x08002f2c                USBWakeUp_IRQHandler
- *fill*         0x08002f2e        0x2 
+                0x080032c4        0x2 CMakeFiles/imu2can_F1.elf.dir/startup/startup_stm32f103xb.s.obj
+                0x080032c4                RTC_Alarm_IRQHandler
+                0x080032c4                EXTI2_IRQHandler
+                0x080032c4                TIM1_CC_IRQHandler
+                0x080032c4                PVD_IRQHandler
+                0x080032c4                EXTI0_IRQHandler
+                0x080032c4                I2C2_EV_IRQHandler
+                0x080032c4                ADC1_2_IRQHandler
+                0x080032c4                SPI1_IRQHandler
+                0x080032c4                TAMPER_IRQHandler
+                0x080032c4                DMA1_Channel4_IRQHandler
+                0x080032c4                USART3_IRQHandler
+                0x080032c4                RTC_IRQHandler
+                0x080032c4                DMA1_Channel7_IRQHandler
+                0x080032c4                TIM4_IRQHandler
+                0x080032c4                I2C1_EV_IRQHandler
+                0x080032c4                DMA1_Channel6_IRQHandler
+                0x080032c4                TIM3_IRQHandler
+                0x080032c4                RCC_IRQHandler
+                0x080032c4                TIM1_TRG_COM_IRQHandler
+                0x080032c4                DMA1_Channel1_IRQHandler
+                0x080032c4                Default_Handler
+                0x080032c4                EXTI15_10_IRQHandler
+                0x080032c4                EXTI9_5_IRQHandler
+                0x080032c4                SPI2_IRQHandler
+                0x080032c4                DMA1_Channel5_IRQHandler
+                0x080032c4                USB_LP_CAN1_RX0_IRQHandler
+                0x080032c4                USB_HP_CAN1_TX_IRQHandler
+                0x080032c4                TIM1_UP_IRQHandler
+                0x080032c4                WWDG_IRQHandler
+                0x080032c4                TIM2_IRQHandler
+                0x080032c4                TIM1_BRK_IRQHandler
+                0x080032c4                EXTI1_IRQHandler
+                0x080032c4                USART2_IRQHandler
+                0x080032c4                I2C2_ER_IRQHandler
+                0x080032c4                CAN1_SCE_IRQHandler
+                0x080032c4                FLASH_IRQHandler
+                0x080032c4                USART1_IRQHandler
+                0x080032c4                I2C1_ER_IRQHandler
+                0x080032c4                USBWakeUp_IRQHandler
+ *fill*         0x080032c6        0x2 
  .text.__libc_init_array
-                0x08002f30       0x48 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-init.o)
-                0x08002f30                __libc_init_array
+                0x080032c8       0x48 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-init.o)
+                0x080032c8                __libc_init_array
  .text.startup.register_fini
-                0x08002f78       0x14 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-__call_atexit.o)
- .text.atexit   0x08002f8c        0xc c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-atexit.o)
-                0x08002f8c                atexit
+                0x08003310       0x14 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-__call_atexit.o)
+ .text.atexit   0x08003324        0xc c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-atexit.o)
+                0x08003324                atexit
  .text.__libc_fini_array
-                0x08002f98       0x2c c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fini.o)
-                0x08002f98                __libc_fini_array
+                0x08003330       0x2c c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fini.o)
+                0x08003330                __libc_fini_array
  .text.__retarget_lock_acquire_recursive
-                0x08002fc4        0x4 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
-                0x08002fc4                __retarget_lock_acquire_recursive
+                0x0800335c        0x4 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
+                0x0800335c                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x08002fc8        0x4 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
-                0x08002fc8                __retarget_lock_release_recursive
+                0x08003360        0x4 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
+                0x08003360                __retarget_lock_release_recursive
  .text.__register_exitproc
-                0x08002fcc       0x8c c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-__atexit.o)
-                0x08002fcc                __register_exitproc
+                0x08003364       0x8c c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-__atexit.o)
+                0x08003364                __register_exitproc
  *(.glue_7)
- .glue_7        0x08003058        0x0 linker stubs
+ .glue_7        0x080033f0        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x08003058        0x0 linker stubs
+ .glue_7t       0x080033f0        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x08003058        0x0 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crtbegin.o
+ .eh_frame      0x080033f0        0x0 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crtbegin.o
  *(.init)
- .init          0x08003058        0x4 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crti.o
-                0x08003058                _init
- .init          0x0800305c        0x8 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crtn.o
+ .init          0x080033f0        0x4 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crti.o
+                0x080033f0                _init
+ .init          0x080033f4        0x8 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crtn.o
  *(.fini)
- .fini          0x08003064        0x4 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crti.o
-                0x08003064                _fini
- .fini          0x08003068        0x8 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crtn.o
-                0x08003070                . = ALIGN (0x4)
-                0x08003070                _etext = .
+ .fini          0x080033fc        0x4 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crti.o
+                0x080033fc                _fini
+ .fini          0x08003400        0x8 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crtn.o
+                0x08003408                . = ALIGN (0x4)
+                0x08003408                _etext = .
 
-.vfp11_veneer   0x08003070        0x0
- .vfp11_veneer  0x08003070        0x0 linker stubs
+.vfp11_veneer   0x08003408        0x0
+ .vfp11_veneer  0x08003408        0x0 linker stubs
 
-.v4_bx          0x08003070        0x0
- .v4_bx         0x08003070        0x0 linker stubs
+.v4_bx          0x08003408        0x0
+ .v4_bx         0x08003408        0x0 linker stubs
 
-.iplt           0x08003070        0x0
- .iplt          0x08003070        0x0 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crtbegin.o
+.iplt           0x08003408        0x0
+ .iplt          0x08003408        0x0 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crtbegin.o
 
-.rodata         0x08003070       0x78
-                0x08003070                . = ALIGN (0x4)
+.rodata         0x08003408       0x78
+                0x08003408                . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x08003070        0x6 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
+ .rodata        0x08003408        0x6 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
  *(.rodata*)
- *fill*         0x08003076        0x2 
+ *fill*         0x0800340e        0x2 
  .rodata.AHBPrescTable
-                0x08003078       0x10 CMakeFiles/imu2can_F1.elf.dir/Core/Src/system_stm32f1xx.c.obj
-                0x08003078                AHBPrescTable
+                0x08003410       0x10 CMakeFiles/imu2can_F1.elf.dir/Core/Src/system_stm32f1xx.c.obj
+                0x08003410                AHBPrescTable
  .rodata.HAL_RCC_GetSysClockFreq.str1.4
-                0x08003088       0x11 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- *fill*         0x08003099        0x3 
+                0x08003420       0x11 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ *fill*         0x08003431        0x3 
  .rodata.imu_temp_PID
-                0x0800309c        0xc CMakeFiles/imu2can_F1.elf.dir/applications/imu_interrupt.c.obj
-                0x0800309c                imu_temp_PID
+                0x08003434        0xc CMakeFiles/imu2can_F1.elf.dir/applications/imu_interrupt.c.obj
+                0x08003434                imu_temp_PID
  .rodata.write_BMI088_ACCEL_self_test_Reg_Data_Error.6341
-                0x080030a8       0x12 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
- *fill*         0x080030ba        0x2 
+                0x08003440       0x12 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
+ *fill*         0x08003452        0x2 
  .rodata.write_BMI088_accel_reg_data_error
-                0x080030bc       0x12 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
- *fill*         0x080030ce        0x2 
+                0x08003454       0x12 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
+ *fill*         0x08003466        0x2 
  .rodata.write_BMI088_gyro_reg_data_error
-                0x080030d0       0x12 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
- *fill*         0x080030e2        0x2 
+                0x08003468       0x12 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
+ *fill*         0x0800347a        0x2 
  .rodata._global_impure_ptr
-                0x080030e4        0x4 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-impure.o)
-                0x080030e4                _global_impure_ptr
-                0x080030e8                . = ALIGN (0x4)
+                0x0800347c        0x4 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-impure.o)
+                0x0800347c                _global_impure_ptr
+                0x08003480                . = ALIGN (0x4)
 
-.rel.dyn        0x080030e8        0x0
- .rel.iplt      0x080030e8        0x0 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crtbegin.o
+.rel.dyn        0x08003480        0x0
+ .rel.iplt      0x08003480        0x0 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x080030e8        0x0
-                0x080030e8                __exidx_start = .
+.ARM            0x08003480        0x0
+                0x08003480                __exidx_start = .
  *(.ARM.exidx*)
-                0x080030e8                __exidx_end = .
+                0x08003480                __exidx_end = .
 
-.preinit_array  0x080030e8        0x0
-                0x080030e8                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x08003480        0x0
+                0x08003480                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x080030e8                PROVIDE (__preinit_array_end = .)
+                0x08003480                PROVIDE (__preinit_array_end = .)
 
-.init_array     0x080030e8        0x8
-                0x080030e8                PROVIDE (__init_array_start = .)
+.init_array     0x08003480        0x8
+                0x08003480                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  .init_array.00000
-                0x080030e8        0x4 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-__call_atexit.o)
+                0x08003480        0x4 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-__call_atexit.o)
  *(.init_array*)
- .init_array    0x080030ec        0x4 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crtbegin.o
-                0x080030f0                PROVIDE (__init_array_end = .)
+ .init_array    0x08003484        0x4 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crtbegin.o
+                0x08003488                PROVIDE (__init_array_end = .)
 
-.fini_array     0x080030f0        0x4
-                0x080030f0                PROVIDE (__fini_array_start = .)
+.fini_array     0x08003488        0x4
+                0x08003488                PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x080030f0        0x4 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crtbegin.o
-                0x080030f4                PROVIDE (__fini_array_end = .)
-                0x080030f4                _sidata = LOADADDR (.data)
+ .fini_array    0x08003488        0x4 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crtbegin.o
+                0x0800348c                PROVIDE (__fini_array_end = .)
+                0x0800348c                _sidata = LOADADDR (.data)
 
-.data           0x20000000      0x43c load address 0x080030f4
+.data           0x20000000      0x43c load address 0x0800348c
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _sdata = .
  *(.data)
@@ -1657,11 +1676,11 @@ LOAD c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/t
                 0x2000043c                . = ALIGN (0x4)
                 0x2000043c                _edata = .
 
-.igot.plt       0x2000043c        0x0 load address 0x08003530
+.igot.plt       0x2000043c        0x0 load address 0x080038c8
  .igot.plt      0x2000043c        0x0 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crtbegin.o
                 0x2000043c                . = ALIGN (0x4)
 
-.bss            0x2000043c      0x208 load address 0x08003530
+.bss            0x2000043c      0x208 load address 0x080038c8
                 0x2000043c                _sbss = .
                 0x2000043c                __bss_start__ = _sbss
  *(.bss)
@@ -1711,7 +1730,7 @@ LOAD c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/t
                 0x20000644                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x20000644      0x604 load address 0x08003530
+                0x20000644      0x604 load address 0x080038c8
                 0x20000648                . = ALIGN (0x8)
  *fill*         0x20000644        0x4 
                 0x20000648                PROVIDE (end = .)
@@ -1816,61 +1835,61 @@ LOAD c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/.
 LOAD c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a
 LOAD c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp\libgcc.a
 
-.debug_info     0x00000000    0x13e0a
- .debug_info    0x00000000      0x863 CMakeFiles/imu2can_F1.elf.dir/Core/Src/can.c.obj
- .debug_info    0x00000863      0x410 CMakeFiles/imu2can_F1.elf.dir/Core/Src/dma.c.obj
- .debug_info    0x00000c73      0x619 CMakeFiles/imu2can_F1.elf.dir/Core/Src/gpio.c.obj
- .debug_info    0x0000128c     0x11d3 CMakeFiles/imu2can_F1.elf.dir/Core/Src/main.c.obj
- .debug_info    0x0000245f      0x9da CMakeFiles/imu2can_F1.elf.dir/Core/Src/spi.c.obj
- .debug_info    0x00002e39      0x2fd CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
- .debug_info    0x00003136      0x538 CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_it.c.obj
- .debug_info    0x0000366e      0x2c9 CMakeFiles/imu2can_F1.elf.dir/Core/Src/system_stm32f1xx.c.obj
- .debug_info    0x00003937      0xbde CMakeFiles/imu2can_F1.elf.dir/Core/Src/tim.c.obj
- .debug_info    0x00004515      0x831 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
- .debug_info    0x00004d46     0x1332 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
- .debug_info    0x00006078      0xe46 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
- .debug_info    0x00006ebe      0x932 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
- .debug_info    0x000077f0      0x75b CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
- .debug_info    0x00007f4b      0xaab CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- .debug_info    0x000089f6     0x1e37 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
- .debug_info    0x0000a82d     0x3be0 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
- .debug_info    0x0000e40d     0x1ad3 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
- .debug_info    0x0000fee0      0xf6c CMakeFiles/imu2can_F1.elf.dir/applications/imu_interrupt.c.obj
- .debug_info    0x00010e4c      0x390 CMakeFiles/imu2can_F1.elf.dir/applications/pid.c.obj
- .debug_info    0x000111dc      0x68e CMakeFiles/imu2can_F1.elf.dir/bsp/boards/bsp_can.c.obj
- .debug_info    0x0001186a      0x34b CMakeFiles/imu2can_F1.elf.dir/bsp/boards/bsp_delay.c.obj
- .debug_info    0x00011bb5      0x2ff CMakeFiles/imu2can_F1.elf.dir/bsp/boards/imu_pwm.c.obj
- .debug_info    0x00011eb4      0x8e7 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088Middleware.c.obj
- .debug_info    0x0001279b     0x164d CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
- .debug_info    0x00013de8       0x22 CMakeFiles/imu2can_F1.elf.dir/startup/startup_stm32f103xb.s.obj
+.debug_info     0x00000000    0x14406
+ .debug_info    0x00000000      0xa16 CMakeFiles/imu2can_F1.elf.dir/Core/Src/can.c.obj
+ .debug_info    0x00000a16      0x410 CMakeFiles/imu2can_F1.elf.dir/Core/Src/dma.c.obj
+ .debug_info    0x00000e26      0x619 CMakeFiles/imu2can_F1.elf.dir/Core/Src/gpio.c.obj
+ .debug_info    0x0000143f     0x1212 CMakeFiles/imu2can_F1.elf.dir/Core/Src/main.c.obj
+ .debug_info    0x00002651      0x9da CMakeFiles/imu2can_F1.elf.dir/Core/Src/spi.c.obj
+ .debug_info    0x0000302b      0x2fd CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+ .debug_info    0x00003328      0x942 CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_it.c.obj
+ .debug_info    0x00003c6a      0x2c9 CMakeFiles/imu2can_F1.elf.dir/Core/Src/system_stm32f1xx.c.obj
+ .debug_info    0x00003f33      0xbde CMakeFiles/imu2can_F1.elf.dir/Core/Src/tim.c.obj
+ .debug_info    0x00004b11      0x831 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_info    0x00005342     0x1332 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
+ .debug_info    0x00006674      0xe46 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_info    0x000074ba      0x932 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+ .debug_info    0x00007dec      0x75b CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_info    0x00008547      0xaab CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_info    0x00008ff2     0x1e37 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+ .debug_info    0x0000ae29     0x3be0 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ .debug_info    0x0000ea09     0x1ad3 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+ .debug_info    0x000104dc      0xf6c CMakeFiles/imu2can_F1.elf.dir/applications/imu_interrupt.c.obj
+ .debug_info    0x00011448      0x390 CMakeFiles/imu2can_F1.elf.dir/applications/pid.c.obj
+ .debug_info    0x000117d8      0x68e CMakeFiles/imu2can_F1.elf.dir/bsp/boards/bsp_can.c.obj
+ .debug_info    0x00011e66      0x34b CMakeFiles/imu2can_F1.elf.dir/bsp/boards/bsp_delay.c.obj
+ .debug_info    0x000121b1      0x2ff CMakeFiles/imu2can_F1.elf.dir/bsp/boards/imu_pwm.c.obj
+ .debug_info    0x000124b0      0x8e7 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088Middleware.c.obj
+ .debug_info    0x00012d97     0x164d CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
+ .debug_info    0x000143e4       0x22 CMakeFiles/imu2can_F1.elf.dir/startup/startup_stm32f103xb.s.obj
 
-.debug_abbrev   0x00000000     0x31fa
- .debug_abbrev  0x00000000      0x218 CMakeFiles/imu2can_F1.elf.dir/Core/Src/can.c.obj
- .debug_abbrev  0x00000218      0x153 CMakeFiles/imu2can_F1.elf.dir/Core/Src/dma.c.obj
- .debug_abbrev  0x0000036b      0x197 CMakeFiles/imu2can_F1.elf.dir/Core/Src/gpio.c.obj
- .debug_abbrev  0x00000502      0x268 CMakeFiles/imu2can_F1.elf.dir/Core/Src/main.c.obj
- .debug_abbrev  0x0000076a      0x1f5 CMakeFiles/imu2can_F1.elf.dir/Core/Src/spi.c.obj
- .debug_abbrev  0x0000095f      0x12e CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
- .debug_abbrev  0x00000a8d      0x1aa CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_it.c.obj
- .debug_abbrev  0x00000c37      0x151 CMakeFiles/imu2can_F1.elf.dir/Core/Src/system_stm32f1xx.c.obj
- .debug_abbrev  0x00000d88      0x21a CMakeFiles/imu2can_F1.elf.dir/Core/Src/tim.c.obj
- .debug_abbrev  0x00000fa2      0x219 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
- .debug_abbrev  0x000011bb      0x283 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
- .debug_abbrev  0x0000143e      0x367 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
- .debug_abbrev  0x000017a5      0x262 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
- .debug_abbrev  0x00001a07      0x213 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
- .debug_abbrev  0x00001c1a      0x28d CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- .debug_abbrev  0x00001ea7      0x267 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
- .debug_abbrev  0x0000210e      0x26b CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
- .debug_abbrev  0x00002379      0x26e CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
- .debug_abbrev  0x000025e7      0x27f CMakeFiles/imu2can_F1.elf.dir/applications/imu_interrupt.c.obj
- .debug_abbrev  0x00002866      0x15d CMakeFiles/imu2can_F1.elf.dir/applications/pid.c.obj
- .debug_abbrev  0x000029c3      0x19b CMakeFiles/imu2can_F1.elf.dir/bsp/boards/bsp_can.c.obj
- .debug_abbrev  0x00002b5e      0x14a CMakeFiles/imu2can_F1.elf.dir/bsp/boards/bsp_delay.c.obj
- .debug_abbrev  0x00002ca8      0x106 CMakeFiles/imu2can_F1.elf.dir/bsp/boards/imu_pwm.c.obj
- .debug_abbrev  0x00002dae      0x212 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088Middleware.c.obj
- .debug_abbrev  0x00002fc0      0x228 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
- .debug_abbrev  0x000031e8       0x12 CMakeFiles/imu2can_F1.elf.dir/startup/startup_stm32f103xb.s.obj
+.debug_abbrev   0x00000000     0x3272
+ .debug_abbrev  0x00000000      0x221 CMakeFiles/imu2can_F1.elf.dir/Core/Src/can.c.obj
+ .debug_abbrev  0x00000221      0x153 CMakeFiles/imu2can_F1.elf.dir/Core/Src/dma.c.obj
+ .debug_abbrev  0x00000374      0x197 CMakeFiles/imu2can_F1.elf.dir/Core/Src/gpio.c.obj
+ .debug_abbrev  0x0000050b      0x268 CMakeFiles/imu2can_F1.elf.dir/Core/Src/main.c.obj
+ .debug_abbrev  0x00000773      0x1f5 CMakeFiles/imu2can_F1.elf.dir/Core/Src/spi.c.obj
+ .debug_abbrev  0x00000968      0x12e CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+ .debug_abbrev  0x00000a96      0x219 CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_it.c.obj
+ .debug_abbrev  0x00000caf      0x151 CMakeFiles/imu2can_F1.elf.dir/Core/Src/system_stm32f1xx.c.obj
+ .debug_abbrev  0x00000e00      0x21a CMakeFiles/imu2can_F1.elf.dir/Core/Src/tim.c.obj
+ .debug_abbrev  0x0000101a      0x219 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_abbrev  0x00001233      0x283 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
+ .debug_abbrev  0x000014b6      0x367 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_abbrev  0x0000181d      0x262 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+ .debug_abbrev  0x00001a7f      0x213 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_abbrev  0x00001c92      0x28d CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_abbrev  0x00001f1f      0x267 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+ .debug_abbrev  0x00002186      0x26b CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ .debug_abbrev  0x000023f1      0x26e CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+ .debug_abbrev  0x0000265f      0x27f CMakeFiles/imu2can_F1.elf.dir/applications/imu_interrupt.c.obj
+ .debug_abbrev  0x000028de      0x15d CMakeFiles/imu2can_F1.elf.dir/applications/pid.c.obj
+ .debug_abbrev  0x00002a3b      0x19b CMakeFiles/imu2can_F1.elf.dir/bsp/boards/bsp_can.c.obj
+ .debug_abbrev  0x00002bd6      0x14a CMakeFiles/imu2can_F1.elf.dir/bsp/boards/bsp_delay.c.obj
+ .debug_abbrev  0x00002d20      0x106 CMakeFiles/imu2can_F1.elf.dir/bsp/boards/imu_pwm.c.obj
+ .debug_abbrev  0x00002e26      0x212 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088Middleware.c.obj
+ .debug_abbrev  0x00003038      0x228 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
+ .debug_abbrev  0x00003260       0x12 CMakeFiles/imu2can_F1.elf.dir/startup/startup_stm32f103xb.s.obj
 
 .debug_loc      0x00000000     0xb3dd
  .debug_loc     0x00000000       0x84 CMakeFiles/imu2can_F1.elf.dir/Core/Src/can.c.obj
@@ -1893,7 +1912,7 @@ LOAD c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/t
  .debug_loc     0x0000ada0       0x6d CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088Middleware.c.obj
  .debug_loc     0x0000ae0d      0x5d0 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
 
-.debug_aranges  0x00000000      0xef8
+.debug_aranges  0x00000000      0xf00
  .debug_aranges
                 0x00000000       0x30 CMakeFiles/imu2can_F1.elf.dir/Core/Src/can.c.obj
  .debug_aranges
@@ -1907,154 +1926,154 @@ LOAD c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/t
  .debug_aranges
                 0x000000d0       0x20 CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
  .debug_aranges
-                0x000000f0       0x80 CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x000000f0       0x88 CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_it.c.obj
  .debug_aranges
-                0x00000170       0x28 CMakeFiles/imu2can_F1.elf.dir/Core/Src/system_stm32f1xx.c.obj
+                0x00000178       0x28 CMakeFiles/imu2can_F1.elf.dir/Core/Src/system_stm32f1xx.c.obj
  .debug_aranges
-                0x00000198       0x38 CMakeFiles/imu2can_F1.elf.dir/Core/Src/tim.c.obj
+                0x000001a0       0x38 CMakeFiles/imu2can_F1.elf.dir/Core/Src/tim.c.obj
  .debug_aranges
-                0x000001d0       0xe0 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x000001d8       0xe0 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
  .debug_aranges
-                0x000002b0      0x138 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
+                0x000002b8      0x138 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
  .debug_aranges
-                0x000003e8       0x90 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x000003f0       0x90 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
  .debug_aranges
-                0x00000478       0x80 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+                0x00000480       0x80 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
  .debug_aranges
-                0x000004f8       0x58 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+                0x00000500       0x58 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
  .debug_aranges
-                0x00000550       0x90 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x00000558       0x90 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
  .debug_aranges
-                0x000005e0      0x1d0 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+                0x000005e8      0x1d0 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
  .debug_aranges
-                0x000007b0      0x3d0 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x000007b8      0x3d0 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .debug_aranges
-                0x00000b80      0x168 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+                0x00000b88      0x168 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
  .debug_aranges
-                0x00000ce8       0x28 CMakeFiles/imu2can_F1.elf.dir/applications/imu_interrupt.c.obj
+                0x00000cf0       0x28 CMakeFiles/imu2can_F1.elf.dir/applications/imu_interrupt.c.obj
  .debug_aranges
-                0x00000d10       0x30 CMakeFiles/imu2can_F1.elf.dir/applications/pid.c.obj
+                0x00000d18       0x30 CMakeFiles/imu2can_F1.elf.dir/applications/pid.c.obj
  .debug_aranges
-                0x00000d40       0x20 CMakeFiles/imu2can_F1.elf.dir/bsp/boards/bsp_can.c.obj
+                0x00000d48       0x20 CMakeFiles/imu2can_F1.elf.dir/bsp/boards/bsp_can.c.obj
  .debug_aranges
-                0x00000d60       0x30 CMakeFiles/imu2can_F1.elf.dir/bsp/boards/bsp_delay.c.obj
+                0x00000d68       0x30 CMakeFiles/imu2can_F1.elf.dir/bsp/boards/bsp_delay.c.obj
  .debug_aranges
-                0x00000d90       0x20 CMakeFiles/imu2can_F1.elf.dir/bsp/boards/imu_pwm.c.obj
+                0x00000d98       0x20 CMakeFiles/imu2can_F1.elf.dir/bsp/boards/imu_pwm.c.obj
  .debug_aranges
-                0x00000db0       0x60 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088Middleware.c.obj
+                0x00000db8       0x60 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088Middleware.c.obj
  .debug_aranges
-                0x00000e10       0xc0 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
+                0x00000e18       0xc0 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
  .debug_aranges
-                0x00000ed0       0x28 CMakeFiles/imu2can_F1.elf.dir/startup/startup_stm32f103xb.s.obj
+                0x00000ed8       0x28 CMakeFiles/imu2can_F1.elf.dir/startup/startup_stm32f103xb.s.obj
 
-.debug_ranges   0x00000000      0xdf8
+.debug_ranges   0x00000000      0xe00
  .debug_ranges  0x00000000       0x20 CMakeFiles/imu2can_F1.elf.dir/Core/Src/can.c.obj
  .debug_ranges  0x00000020       0x10 CMakeFiles/imu2can_F1.elf.dir/Core/Src/dma.c.obj
  .debug_ranges  0x00000030       0x10 CMakeFiles/imu2can_F1.elf.dir/Core/Src/gpio.c.obj
  .debug_ranges  0x00000040       0x20 CMakeFiles/imu2can_F1.elf.dir/Core/Src/main.c.obj
  .debug_ranges  0x00000060       0x20 CMakeFiles/imu2can_F1.elf.dir/Core/Src/spi.c.obj
  .debug_ranges  0x00000080       0x10 CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
- .debug_ranges  0x00000090       0x70 CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_it.c.obj
- .debug_ranges  0x00000100       0x18 CMakeFiles/imu2can_F1.elf.dir/Core/Src/system_stm32f1xx.c.obj
- .debug_ranges  0x00000118       0x28 CMakeFiles/imu2can_F1.elf.dir/Core/Src/tim.c.obj
- .debug_ranges  0x00000140       0xd0 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
- .debug_ranges  0x00000210      0x128 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
- .debug_ranges  0x00000338       0xe0 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
- .debug_ranges  0x00000418       0x70 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
- .debug_ranges  0x00000488       0x48 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
- .debug_ranges  0x000004d0       0xa0 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- .debug_ranges  0x00000570      0x1c0 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
- .debug_ranges  0x00000730      0x3c0 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
- .debug_ranges  0x00000af0      0x158 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
- .debug_ranges  0x00000c48       0x30 CMakeFiles/imu2can_F1.elf.dir/applications/imu_interrupt.c.obj
- .debug_ranges  0x00000c78       0x20 CMakeFiles/imu2can_F1.elf.dir/applications/pid.c.obj
- .debug_ranges  0x00000c98       0x10 CMakeFiles/imu2can_F1.elf.dir/bsp/boards/bsp_can.c.obj
- .debug_ranges  0x00000ca8       0x20 CMakeFiles/imu2can_F1.elf.dir/bsp/boards/bsp_delay.c.obj
- .debug_ranges  0x00000cc8       0x10 CMakeFiles/imu2can_F1.elf.dir/bsp/boards/imu_pwm.c.obj
- .debug_ranges  0x00000cd8       0x50 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088Middleware.c.obj
- .debug_ranges  0x00000d28       0xb0 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
- .debug_ranges  0x00000dd8       0x20 CMakeFiles/imu2can_F1.elf.dir/startup/startup_stm32f103xb.s.obj
+ .debug_ranges  0x00000090       0x78 CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_it.c.obj
+ .debug_ranges  0x00000108       0x18 CMakeFiles/imu2can_F1.elf.dir/Core/Src/system_stm32f1xx.c.obj
+ .debug_ranges  0x00000120       0x28 CMakeFiles/imu2can_F1.elf.dir/Core/Src/tim.c.obj
+ .debug_ranges  0x00000148       0xd0 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_ranges  0x00000218      0x128 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
+ .debug_ranges  0x00000340       0xe0 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_ranges  0x00000420       0x70 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+ .debug_ranges  0x00000490       0x48 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_ranges  0x000004d8       0xa0 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_ranges  0x00000578      0x1c0 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+ .debug_ranges  0x00000738      0x3c0 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ .debug_ranges  0x00000af8      0x158 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+ .debug_ranges  0x00000c50       0x30 CMakeFiles/imu2can_F1.elf.dir/applications/imu_interrupt.c.obj
+ .debug_ranges  0x00000c80       0x20 CMakeFiles/imu2can_F1.elf.dir/applications/pid.c.obj
+ .debug_ranges  0x00000ca0       0x10 CMakeFiles/imu2can_F1.elf.dir/bsp/boards/bsp_can.c.obj
+ .debug_ranges  0x00000cb0       0x20 CMakeFiles/imu2can_F1.elf.dir/bsp/boards/bsp_delay.c.obj
+ .debug_ranges  0x00000cd0       0x10 CMakeFiles/imu2can_F1.elf.dir/bsp/boards/imu_pwm.c.obj
+ .debug_ranges  0x00000ce0       0x50 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088Middleware.c.obj
+ .debug_ranges  0x00000d30       0xb0 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
+ .debug_ranges  0x00000de0       0x20 CMakeFiles/imu2can_F1.elf.dir/startup/startup_stm32f103xb.s.obj
 
-.debug_line     0x00000000    0x10064
- .debug_line    0x00000000      0x3ab CMakeFiles/imu2can_F1.elf.dir/Core/Src/can.c.obj
- .debug_line    0x000003ab      0x22a CMakeFiles/imu2can_F1.elf.dir/Core/Src/dma.c.obj
- .debug_line    0x000005d5      0x2b5 CMakeFiles/imu2can_F1.elf.dir/Core/Src/gpio.c.obj
- .debug_line    0x0000088a      0x4a4 CMakeFiles/imu2can_F1.elf.dir/Core/Src/main.c.obj
- .debug_line    0x00000d2e      0x45a CMakeFiles/imu2can_F1.elf.dir/Core/Src/spi.c.obj
- .debug_line    0x00001188      0x227 CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
- .debug_line    0x000013af      0x3ad CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_it.c.obj
- .debug_line    0x0000175c      0x2da CMakeFiles/imu2can_F1.elf.dir/Core/Src/system_stm32f1xx.c.obj
- .debug_line    0x00001a36      0x421 CMakeFiles/imu2can_F1.elf.dir/Core/Src/tim.c.obj
- .debug_line    0x00001e57      0x56a CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
- .debug_line    0x000023c1     0x116c CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
- .debug_line    0x0000352d      0x6c0 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
- .debug_line    0x00003bed      0xadf CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
- .debug_line    0x000046cc      0x66c CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
- .debug_line    0x00004d38      0xc87 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- .debug_line    0x000059bf     0x24b8 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
- .debug_line    0x00007e77     0x46f3 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
- .debug_line    0x0000c56a     0x1bee CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
- .debug_line    0x0000e158      0x478 CMakeFiles/imu2can_F1.elf.dir/applications/imu_interrupt.c.obj
- .debug_line    0x0000e5d0      0x48c CMakeFiles/imu2can_F1.elf.dir/applications/pid.c.obj
- .debug_line    0x0000ea5c      0x27c CMakeFiles/imu2can_F1.elf.dir/bsp/boards/bsp_can.c.obj
- .debug_line    0x0000ecd8      0x30c CMakeFiles/imu2can_F1.elf.dir/bsp/boards/bsp_delay.c.obj
- .debug_line    0x0000efe4      0x20e CMakeFiles/imu2can_F1.elf.dir/bsp/boards/imu_pwm.c.obj
- .debug_line    0x0000f1f2      0x374 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088Middleware.c.obj
- .debug_line    0x0000f566      0xa65 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
- .debug_line    0x0000ffcb       0x99 CMakeFiles/imu2can_F1.elf.dir/startup/startup_stm32f103xb.s.obj
+.debug_line     0x00000000    0x100d1
+ .debug_line    0x00000000      0x3ca CMakeFiles/imu2can_F1.elf.dir/Core/Src/can.c.obj
+ .debug_line    0x000003ca      0x22a CMakeFiles/imu2can_F1.elf.dir/Core/Src/dma.c.obj
+ .debug_line    0x000005f4      0x2b5 CMakeFiles/imu2can_F1.elf.dir/Core/Src/gpio.c.obj
+ .debug_line    0x000008a9      0x4b3 CMakeFiles/imu2can_F1.elf.dir/Core/Src/main.c.obj
+ .debug_line    0x00000d5c      0x45a CMakeFiles/imu2can_F1.elf.dir/Core/Src/spi.c.obj
+ .debug_line    0x000011b6      0x227 CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+ .debug_line    0x000013dd      0x3ec CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_it.c.obj
+ .debug_line    0x000017c9      0x2da CMakeFiles/imu2can_F1.elf.dir/Core/Src/system_stm32f1xx.c.obj
+ .debug_line    0x00001aa3      0x421 CMakeFiles/imu2can_F1.elf.dir/Core/Src/tim.c.obj
+ .debug_line    0x00001ec4      0x56a CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_line    0x0000242e     0x116c CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
+ .debug_line    0x0000359a      0x6c0 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_line    0x00003c5a      0xadf CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+ .debug_line    0x00004739      0x66c CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_line    0x00004da5      0xc87 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_line    0x00005a2c     0x24b8 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+ .debug_line    0x00007ee4     0x46f3 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ .debug_line    0x0000c5d7     0x1bee CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+ .debug_line    0x0000e1c5      0x478 CMakeFiles/imu2can_F1.elf.dir/applications/imu_interrupt.c.obj
+ .debug_line    0x0000e63d      0x48c CMakeFiles/imu2can_F1.elf.dir/applications/pid.c.obj
+ .debug_line    0x0000eac9      0x27c CMakeFiles/imu2can_F1.elf.dir/bsp/boards/bsp_can.c.obj
+ .debug_line    0x0000ed45      0x30c CMakeFiles/imu2can_F1.elf.dir/bsp/boards/bsp_delay.c.obj
+ .debug_line    0x0000f051      0x20e CMakeFiles/imu2can_F1.elf.dir/bsp/boards/imu_pwm.c.obj
+ .debug_line    0x0000f25f      0x374 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088Middleware.c.obj
+ .debug_line    0x0000f5d3      0xa65 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
+ .debug_line    0x00010038       0x99 CMakeFiles/imu2can_F1.elf.dir/startup/startup_stm32f103xb.s.obj
 
-.debug_str      0x00000000     0x4726
- .debug_str     0x00000000      0x5e5 CMakeFiles/imu2can_F1.elf.dir/Core/Src/can.c.obj
-                                0x671 (size before relaxing)
- .debug_str     0x000005e5      0x334 CMakeFiles/imu2can_F1.elf.dir/Core/Src/dma.c.obj
+.debug_str      0x00000000     0x473a
+ .debug_str     0x00000000      0x8f6 CMakeFiles/imu2can_F1.elf.dir/Core/Src/can.c.obj
+                                0x982 (size before relaxing)
+ .debug_str     0x000008f6       0x37 CMakeFiles/imu2can_F1.elf.dir/Core/Src/dma.c.obj
                                 0x5ed (size before relaxing)
- .debug_str     0x00000919       0x67 CMakeFiles/imu2can_F1.elf.dir/Core/Src/gpio.c.obj
+ .debug_str     0x0000092d       0x67 CMakeFiles/imu2can_F1.elf.dir/Core/Src/gpio.c.obj
                                 0x687 (size before relaxing)
- .debug_str     0x00000980      0x81e CMakeFiles/imu2can_F1.elf.dir/Core/Src/main.c.obj
-                                0xe53 (size before relaxing)
- .debug_str     0x0000119e       0x9a CMakeFiles/imu2can_F1.elf.dir/Core/Src/spi.c.obj
+ .debug_str     0x00000994      0x83c CMakeFiles/imu2can_F1.elf.dir/Core/Src/main.c.obj
+                                0xe71 (size before relaxing)
+ .debug_str     0x000011d0       0x9a CMakeFiles/imu2can_F1.elf.dir/Core/Src/spi.c.obj
                                 0x7bc (size before relaxing)
- .debug_str     0x00001238       0x69 CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+ .debug_str     0x0000126a       0x69 CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
                                 0x32c (size before relaxing)
- .debug_str     0x000012a1      0x150 CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                                0x5c8 (size before relaxing)
- .debug_str     0x000013f1       0x6b CMakeFiles/imu2can_F1.elf.dir/Core/Src/system_stm32f1xx.c.obj
+ .debug_str     0x000012d3      0x177 CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                                0x86b (size before relaxing)
+ .debug_str     0x0000144a       0x6b CMakeFiles/imu2can_F1.elf.dir/Core/Src/system_stm32f1xx.c.obj
                                 0x323 (size before relaxing)
- .debug_str     0x0000145c      0x203 CMakeFiles/imu2can_F1.elf.dir/Core/Src/tim.c.obj
+ .debug_str     0x000014b5      0x203 CMakeFiles/imu2can_F1.elf.dir/Core/Src/tim.c.obj
                                 0xa28 (size before relaxing)
- .debug_str     0x0000165f      0x29c CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_str     0x000016b8      0x29c CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
                                 0x8a0 (size before relaxing)
- .debug_str     0x000018fb      0x537 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
+ .debug_str     0x00001954      0x524 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
                                 0xb39 (size before relaxing)
- .debug_str     0x00001e32      0x399 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_str     0x00001e78      0x385 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
                                 0x9bc (size before relaxing)
- .debug_str     0x000021cb      0x21a CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+ .debug_str     0x000021fd      0x21a CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
                                 0x70a (size before relaxing)
- .debug_str     0x000023e5      0x115 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_str     0x00002417      0x115 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
                                 0x50d (size before relaxing)
- .debug_str     0x000024fa      0x1fe CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_str     0x0000252c      0x1fe CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
                                 0x6ef (size before relaxing)
- .debug_str     0x000026f8      0x531 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+ .debug_str     0x0000272a      0x531 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
                                 0xc52 (size before relaxing)
- .debug_str     0x00002c29      0xde7 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ .debug_str     0x00002c5b      0xdd5 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
                                0x1745 (size before relaxing)
- .debug_str     0x00003a10      0x53d CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+ .debug_str     0x00003a30      0x53d CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
                                 0xf46 (size before relaxing)
- .debug_str     0x00003f4d      0x179 CMakeFiles/imu2can_F1.elf.dir/applications/imu_interrupt.c.obj
+ .debug_str     0x00003f6d      0x16d CMakeFiles/imu2can_F1.elf.dir/applications/imu_interrupt.c.obj
                                 0xb61 (size before relaxing)
- .debug_str     0x000040c6       0x43 CMakeFiles/imu2can_F1.elf.dir/applications/pid.c.obj
+ .debug_str     0x000040da       0x43 CMakeFiles/imu2can_F1.elf.dir/applications/pid.c.obj
                                 0x337 (size before relaxing)
- .debug_str     0x00004109       0x3f CMakeFiles/imu2can_F1.elf.dir/bsp/boards/bsp_can.c.obj
+ .debug_str     0x0000411d       0x3f CMakeFiles/imu2can_F1.elf.dir/bsp/boards/bsp_can.c.obj
                                 0x650 (size before relaxing)
- .debug_str     0x00004148       0x50 CMakeFiles/imu2can_F1.elf.dir/bsp/boards/bsp_delay.c.obj
+ .debug_str     0x0000415c       0x50 CMakeFiles/imu2can_F1.elf.dir/bsp/boards/bsp_delay.c.obj
                                 0x32b (size before relaxing)
- .debug_str     0x00004198       0x31 CMakeFiles/imu2can_F1.elf.dir/bsp/boards/imu_pwm.c.obj
+ .debug_str     0x000041ac       0x31 CMakeFiles/imu2can_F1.elf.dir/bsp/boards/imu_pwm.c.obj
                                 0x316 (size before relaxing)
- .debug_str     0x000041c9       0xee CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088Middleware.c.obj
+ .debug_str     0x000041dd       0xee CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088Middleware.c.obj
                                 0x7a4 (size before relaxing)
- .debug_str     0x000042b7      0x427 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
+ .debug_str     0x000042cb      0x427 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
                                 0x7ee (size before relaxing)
- .debug_str     0x000046de       0x48 CMakeFiles/imu2can_F1.elf.dir/startup/startup_stm32f103xb.s.obj
+ .debug_str     0x000046f2       0x48 CMakeFiles/imu2can_F1.elf.dir/startup/startup_stm32f103xb.s.obj
                                  0x76 (size before relaxing)
 
 .comment        0x00000000       0x4c
@@ -2085,39 +2104,39 @@ LOAD c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/t
  .comment       0x0000004c       0x4d CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088Middleware.c.obj
  .comment       0x0000004c       0x4d CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
 
-.debug_frame    0x00000000     0x29ac
- .debug_frame   0x00000000       0x60 CMakeFiles/imu2can_F1.elf.dir/Core/Src/can.c.obj
- .debug_frame   0x00000060       0x2c CMakeFiles/imu2can_F1.elf.dir/Core/Src/dma.c.obj
- .debug_frame   0x0000008c       0x38 CMakeFiles/imu2can_F1.elf.dir/Core/Src/gpio.c.obj
- .debug_frame   0x000000c4       0x58 CMakeFiles/imu2can_F1.elf.dir/Core/Src/main.c.obj
- .debug_frame   0x0000011c       0x64 CMakeFiles/imu2can_F1.elf.dir/Core/Src/spi.c.obj
- .debug_frame   0x00000180       0x28 CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
- .debug_frame   0x000001a8      0x108 CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_it.c.obj
- .debug_frame   0x000002b0       0x30 CMakeFiles/imu2can_F1.elf.dir/Core/Src/system_stm32f1xx.c.obj
- .debug_frame   0x000002e0       0x78 CMakeFiles/imu2can_F1.elf.dir/Core/Src/tim.c.obj
- .debug_frame   0x00000358      0x1cc CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
- .debug_frame   0x00000524      0x2dc CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
- .debug_frame   0x00000800      0x12c CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
- .debug_frame   0x0000092c      0x148 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
- .debug_frame   0x00000a74       0xe8 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
- .debug_frame   0x00000b5c      0x190 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- .debug_frame   0x00000cec      0x5a0 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
- .debug_frame   0x0000128c      0xb2c CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
- .debug_frame   0x00001db8      0x420 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
- .debug_frame   0x000021d8       0x54 CMakeFiles/imu2can_F1.elf.dir/applications/imu_interrupt.c.obj
- .debug_frame   0x0000222c       0x6c CMakeFiles/imu2can_F1.elf.dir/applications/pid.c.obj
- .debug_frame   0x00002298       0x30 CMakeFiles/imu2can_F1.elf.dir/bsp/boards/bsp_can.c.obj
- .debug_frame   0x000022c8       0x58 CMakeFiles/imu2can_F1.elf.dir/bsp/boards/bsp_delay.c.obj
- .debug_frame   0x00002320       0x20 CMakeFiles/imu2can_F1.elf.dir/bsp/boards/imu_pwm.c.obj
- .debug_frame   0x00002340       0xdc CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088Middleware.c.obj
- .debug_frame   0x0000241c      0x274 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
- .debug_frame   0x00002690       0x24 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp\libgcc.a(_arm_mulsf3.o)
- .debug_frame   0x000026b4       0x4c c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubsf3.o)
- .debug_frame   0x00002700       0xc8 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp\libgcc.a(_arm_cmpsf2.o)
- .debug_frame   0x000027c8       0x24 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp\libgcc.a(_arm_fixunssfsi.o)
- .debug_frame   0x000027ec       0x2c c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-init.o)
- .debug_frame   0x00002818       0x5c c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-__call_atexit.o)
- .debug_frame   0x00002874       0x20 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-atexit.o)
- .debug_frame   0x00002894       0x34 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fini.o)
- .debug_frame   0x000028c8       0xb0 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
- .debug_frame   0x00002978       0x34 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-__atexit.o)
+.debug_frame    0x00000000     0x29c8
+ .debug_frame   0x00000000       0x64 CMakeFiles/imu2can_F1.elf.dir/Core/Src/can.c.obj
+ .debug_frame   0x00000064       0x2c CMakeFiles/imu2can_F1.elf.dir/Core/Src/dma.c.obj
+ .debug_frame   0x00000090       0x38 CMakeFiles/imu2can_F1.elf.dir/Core/Src/gpio.c.obj
+ .debug_frame   0x000000c8       0x58 CMakeFiles/imu2can_F1.elf.dir/Core/Src/main.c.obj
+ .debug_frame   0x00000120       0x64 CMakeFiles/imu2can_F1.elf.dir/Core/Src/spi.c.obj
+ .debug_frame   0x00000184       0x28 CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+ .debug_frame   0x000001ac      0x120 CMakeFiles/imu2can_F1.elf.dir/Core/Src/stm32f1xx_it.c.obj
+ .debug_frame   0x000002cc       0x30 CMakeFiles/imu2can_F1.elf.dir/Core/Src/system_stm32f1xx.c.obj
+ .debug_frame   0x000002fc       0x78 CMakeFiles/imu2can_F1.elf.dir/Core/Src/tim.c.obj
+ .debug_frame   0x00000374      0x1cc CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_frame   0x00000540      0x2dc CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
+ .debug_frame   0x0000081c      0x12c CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_frame   0x00000948      0x148 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+ .debug_frame   0x00000a90       0xe8 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_frame   0x00000b78      0x190 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_frame   0x00000d08      0x5a0 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+ .debug_frame   0x000012a8      0xb2c CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ .debug_frame   0x00001dd4      0x420 CMakeFiles/imu2can_F1.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+ .debug_frame   0x000021f4       0x54 CMakeFiles/imu2can_F1.elf.dir/applications/imu_interrupt.c.obj
+ .debug_frame   0x00002248       0x6c CMakeFiles/imu2can_F1.elf.dir/applications/pid.c.obj
+ .debug_frame   0x000022b4       0x30 CMakeFiles/imu2can_F1.elf.dir/bsp/boards/bsp_can.c.obj
+ .debug_frame   0x000022e4       0x58 CMakeFiles/imu2can_F1.elf.dir/bsp/boards/bsp_delay.c.obj
+ .debug_frame   0x0000233c       0x20 CMakeFiles/imu2can_F1.elf.dir/bsp/boards/imu_pwm.c.obj
+ .debug_frame   0x0000235c       0xdc CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088Middleware.c.obj
+ .debug_frame   0x00002438      0x274 CMakeFiles/imu2can_F1.elf.dir/component/devices/BMI088driver.c.obj
+ .debug_frame   0x000026ac       0x24 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp\libgcc.a(_arm_mulsf3.o)
+ .debug_frame   0x000026d0       0x4c c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubsf3.o)
+ .debug_frame   0x0000271c       0xc8 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp\libgcc.a(_arm_cmpsf2.o)
+ .debug_frame   0x000027e4       0x24 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp\libgcc.a(_arm_fixunssfsi.o)
+ .debug_frame   0x00002808       0x2c c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-init.o)
+ .debug_frame   0x00002834       0x5c c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-__call_atexit.o)
+ .debug_frame   0x00002890       0x20 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-atexit.o)
+ .debug_frame   0x000028b0       0x34 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fini.o)
+ .debug_frame   0x000028e4       0xb0 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
+ .debug_frame   0x00002994       0x34 c:/gcc-arm-none-eabi/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-__atexit.o)

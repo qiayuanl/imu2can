@@ -145,6 +145,7 @@ CMakeFiles/imu2can_F1.elf.dir/Core/Src/main.c.obj
  ../applications/imu_interrupt.h
  ../bsp/boards/bsp_can.h
  ../bsp/boards/bsp_delay.h
+ ../bsp/boards/imu_pwm.h
  ../bsp/boards/struct_typedef.h
  D:/DynamicX/Code/imu2can_F1/Core/Src/main.c
 CMakeFiles/imu2can_F1.elf.dir/Core/Src/spi.c.obj

@@ -60,6 +60,7 @@ void EXTI3_IRQHandler(void);
 void EXTI4_IRQHandler(void);
 void DMA1_Channel2_IRQHandler(void);
 void DMA1_Channel3_IRQHandler(void);
+void CAN1_RX1_IRQHandler(void);
 /* USER CODE BEGIN EFP */
 
 /* USER CODE END EFP */
@@ -69,5 +70,3 @@ void DMA1_Channel3_IRQHandler(void);
 #endif
 
 #endif /* __STM32F1xx_IT_H */
-
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

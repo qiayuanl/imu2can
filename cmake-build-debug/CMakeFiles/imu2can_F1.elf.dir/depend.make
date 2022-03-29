@@ -144,6 +144,7 @@ CMakeFiles/imu2can_F1.elf.dir/Core/Src/main.c.obj: ../Drivers/STM32F1xx_HAL_Driv
 CMakeFiles/imu2can_F1.elf.dir/Core/Src/main.c.obj: ../applications/imu_interrupt.h
 CMakeFiles/imu2can_F1.elf.dir/Core/Src/main.c.obj: ../bsp/boards/bsp_can.h
 CMakeFiles/imu2can_F1.elf.dir/Core/Src/main.c.obj: ../bsp/boards/bsp_delay.h
+CMakeFiles/imu2can_F1.elf.dir/Core/Src/main.c.obj: ../bsp/boards/imu_pwm.h
 CMakeFiles/imu2can_F1.elf.dir/Core/Src/main.c.obj: ../bsp/boards/struct_typedef.h
 CMakeFiles/imu2can_F1.elf.dir/Core/Src/main.c.obj: ../Core/Src/main.c
 
