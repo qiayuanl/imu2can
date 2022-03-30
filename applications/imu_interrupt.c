@@ -5,8 +5,8 @@
 #include "imu_pwm.h"
 #include "main.h"
 #include "pid.h"
-#include "bsp_can.h"
 
+#define CAN_ID 0x100
 #define CAMERA_TRIGGER_PRESCALER 5
 
 #define TEMPERATURE_DESIRED 45.0f

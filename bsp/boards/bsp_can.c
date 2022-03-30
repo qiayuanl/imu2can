@@ -24,7 +24,7 @@ void can_init(void) {
   can_filter_st.FilterActivation = ENABLE;
   can_filter_st.FilterMode = CAN_FILTERMODE_IDMASK;
   can_filter_st.FilterScale = CAN_FILTERSCALE_32BIT;
-  can_filter_st.FilterIdHigh = (CAN_ID + 1) << 5;
+  can_filter_st.FilterIdHigh = (102) << 5;
   can_filter_st.FilterIdLow = 0x0000;
   can_filter_st.FilterMaskIdHigh = 0xFFF;
   can_filter_st.FilterMaskIdLow = 0x0000;
