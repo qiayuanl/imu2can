@@ -242,6 +242,11 @@ void DMA1_Channel3_IRQHandler(void) {
 /**
   * @brief This function handles CAN RX1 interrupt.
   */
+
+void USB_LP_CAN1_RX0_IRQHandler(void){
+    HAL_CAN_IRQHandler(&hcan);
+}
+
 void CAN1_RX1_IRQHandler(void) {
     /* USER CODE BEGIN CAN1_RX1_IRQn 0 */
 
