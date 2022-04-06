@@ -68,18 +68,19 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
           uint32_t send_mail_box;
           can_header.DLC = 0x07;
           get_BMI088_accel_raw(can_data);
+          can_data[6] = 0;
+          if(camera_start_flag) can_data[6] |= 2;
           if (camera_trigger_count == 1) {
             camera_trigger_count = CAMERA_TRIGGER_PRESCALER;
             if (camera_start_flag) {
-              can_data[6] = 1;
               HAL_GPIO_WritePin(CAM_GPIO_Port, CAM_Pin, GPIO_PIN_SET);
-                HAL_GPIO_WritePin(GPIOB,GPIO_PIN_1,GPIO_PIN_SET);
+              HAL_GPIO_WritePin(GPIOB,GPIO_PIN_1,GPIO_PIN_SET);
+                can_data[6] |= 1;
             }else{
                 HAL_GPIO_WritePin(GPIOB,GPIO_PIN_1,GPIO_PIN_RESET);
             }
           } else {
             HAL_GPIO_WritePin(CAM_GPIO_Port, CAM_Pin, GPIO_PIN_RESET);
-            can_data[6] = 0;
             camera_trigger_count--;
           }
           HAL_CAN_AddTxMessage(&hcan, &can_header, can_data, &send_mail_box);
