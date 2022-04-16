@@ -3,5 +3,5 @@
 #include "main.h"
 
 void imu_pwm_set(uint16_t pwm) {
-    TIM10->CCR1 = (pwm);
+    TIM2->CCR2 = (pwm);
 }

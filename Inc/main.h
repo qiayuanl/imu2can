@@ -7,13 +7,12 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) 2021 STMicroelectronics.
-  * All rights reserved.</center></h2>
+  * Copyright (c) 2022 STMicroelectronics.
+  * All rights reserved.
   *
-  * This software component is licensed by ST under Ultimate Liberty license
-  * SLA0044, the "License"; You may not use this file except in compliance with
-  * the License. You may obtain a copy of the License at:
-  *                             www.st.com/SLA0044
+  * This software is licensed under terms that can be found in the LICENSE file
+  * in the root directory of this software component.
+  * If no LICENSE file comes with this software, it is provided AS-IS.
   *
   ******************************************************************************
   */
@@ -28,7 +27,7 @@ extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
-#include "stm32f4xx_hal.h"
+#include "stm32f1xx_hal.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -58,16 +57,18 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define CS1_ACCEL_Pin GPIO_PIN_4
+#define INT1_ACCEL_Pin GPIO_PIN_3
+#define INT1_ACCEL_GPIO_Port GPIOA
+#define INT1_ACCEL_EXTI_IRQn EXTI3_IRQn
+#define INT1_GRYO_Pin GPIO_PIN_4
+#define INT1_GRYO_GPIO_Port GPIOA
+#define INT1_GRYO_EXTI_IRQn EXTI4_IRQn
+#define CAM_Pin GPIO_PIN_13
+#define CAM_GPIO_Port GPIOB
+#define CS1_ACCEL_Pin GPIO_PIN_8
 #define CS1_ACCEL_GPIO_Port GPIOA
-#define INT1_ACCEL_Pin GPIO_PIN_4
-#define INT1_ACCEL_GPIO_Port GPIOC
-#define INT1_ACCEL_EXTI_IRQn EXTI4_IRQn
-#define INT1_GRYO_Pin GPIO_PIN_5
-#define INT1_GRYO_GPIO_Port GPIOC
-#define INT1_GRYO_EXTI_IRQn EXTI9_5_IRQn
-#define CS1_GYRO_Pin GPIO_PIN_0
-#define CS1_GYRO_GPIO_Port GPIOB
+#define CS1_GYRO_Pin GPIO_PIN_9
+#define CS1_GYRO_GPIO_Port GPIOA
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
@@ -77,5 +78,3 @@ void Error_Handler(void);
 #endif
 
 #endif /* __MAIN_H */
-
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
