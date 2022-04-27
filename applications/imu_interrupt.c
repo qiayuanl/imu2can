@@ -30,6 +30,7 @@ static CAN_TxHeaderTypeDef can_header;
 static uint8_t can_data[8];
 
 uint8_t camera_start_flag = 0;
+uint8_t trigger_start_delay = 0;
 
 void imu_interrupt_init(void) {
     PID_init(&imu_temp_pid, PID_POSITION, imu_temp_PID, TEMPERATURE_PID_MAX_OUT, TEMPERATURE_PID_MAX_I_OUT);
@@ -69,10 +70,11 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
           can_header.DLC = 0x07;
           get_BMI088_accel_raw(can_data);
           can_data[6] = 0;
+          if (trigger_start_delay != 1) trigger_start_delay--;
           if(camera_start_flag) can_data[6] |= 2;
           if (camera_trigger_count == 1) {
             camera_trigger_count = CAMERA_TRIGGER_PRESCALER;
-            if (camera_start_flag) {
+            if (camera_start_flag  && trigger_start_delay == 1) {
               HAL_GPIO_WritePin(CAM_GPIO_Port, CAM_Pin, GPIO_PIN_SET);
               HAL_GPIO_WritePin(GPIOB,GPIO_PIN_1,GPIO_PIN_SET);
                 can_data[6] |= 1;
