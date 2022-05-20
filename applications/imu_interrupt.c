@@ -2,10 +2,10 @@
 #include "imu_interrupt.h"
 
 #include "BMI088driver.h"
+#include "bsp_can.h"
 #include "imu_pwm.h"
 #include "main.h"
 #include "pid.h"
-#include "bsp_can.h"
 
 #define CAN_ID 0x100
 #define CAMERA_TRIGGER_PRESCALER 5
@@ -35,7 +35,7 @@ uint8_t trigger_start_delay = 0;
 void imu_interrupt_init(void) {
     PID_init(&imu_temp_pid, PID_POSITION, imu_temp_PID, TEMPERATURE_PID_MAX_OUT, TEMPERATURE_PID_MAX_I_OUT);
     while (BMI088_init()) {
-        HAL_GPIO_WritePin(GPIOB,GPIO_PIN_1,GPIO_PIN_SET);
+        HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_1);
         HAL_Delay(100);
     }
     // set spi frequency
