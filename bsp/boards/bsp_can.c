@@ -2,17 +2,22 @@
 
 #include "main.h"
 
+//delay time : 1/(800/160)
+#define TRIGGER_START_DELAY_PRESCALER 160
+
 CAN_RxHeaderTypeDef can_rx_header;
 uint8_t can_rx_data;
 extern CAN_HandleTypeDef hcan;
 extern uint8_t camera_start_flag;
 //extern CAN_HandleTypeDef hcan2;
+extern uint8_t trigger_start_delay;
 
 void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan) {
   if (hcan->Instance == CAN1) {
     HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO0, &can_rx_header, &can_rx_data);
     if (can_rx_data) {
       camera_start_flag = 1;
+      trigger_start_delay = TRIGGER_START_DELAY_PRESCALER;
     } else {
       camera_start_flag = 0;
     }
